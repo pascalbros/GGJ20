@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd3c6a127017ed945b76626f60d103a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  team: 2
-  playerId: 1
+  team: 0
+  playerId: 0
   moveSpeed: 1.3
   throwForce: 165
 --- !u!50 &7669673730795487772
