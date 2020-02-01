@@ -23,7 +23,7 @@ public class DamObject : MonoBehaviour
         }
     }
 
-    void OnObjectCollected() {
+    public void OnObjectCollected() {
         this.GetComponent<AudioSource>().PlayOneShot(onCollectedClip, 1.0f);
         Destroy(this);
     }

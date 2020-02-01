@@ -45,6 +45,7 @@ public class Throwable : MonoBehaviour
 
     public void grabObject(Transform player, int team, int playerId)
     {
+        if (GetComponent<DamObject>()) GetComponent<DamObject>().OnObjectCollected();
         if (owned && ownerID!=playerId)
         {
             //owner.GetComponent<Character>().ReleaseObject();
@@ -55,6 +56,7 @@ public class Throwable : MonoBehaviour
         owner = player;
         teamOwner = team;
         ownerID = playerId;
+        GetComponent<BoxCollider2D>().enabled = false;
         Debug.Log(ownerID);
     }
     public void releaseObject()

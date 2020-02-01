@@ -110,14 +110,20 @@ public class Character : MonoBehaviour {
         //SpecialAbilityScript
         if (gameObject.tag.Equals("Collector"))
         {
+            DashClass dash = gameObject.GetComponent<DashClass>();
+            dash.Dash(dirX, dirY);
             Debug.Log("Collector");
         }
         else if (gameObject.tag.Equals("Defender"))
         {
+            DefendClass defend = gameObject.GetComponent<DefendClass>();
+            defend.Defend();
             Debug.Log("Defender");
         }
         else if (gameObject.tag.Equals("Fighter"))
         {
+            FightClass fight = gameObject.GetComponent<FightClass>();
+            fight.Fight();
             Debug.Log("Fighter");
         }
     }
@@ -261,6 +267,7 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8 && action!=CharacterAction.BringingObject)
         {
+            if (collision.GetComponent<Throwable>().throwing) collision.GetComponent<BoxCollider2D>().enabled = true;
             damObject = null;
         }
     }

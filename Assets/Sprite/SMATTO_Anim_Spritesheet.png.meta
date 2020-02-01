@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 03b4baafc0b9343cab1e5199cd7560e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5395059234477416657
+    second: SMATTO_Anim_Spritesheet_0
+  - first:
+      213: -407596135100189206
+    second: SMATTO_Anim_Spritesheet_1
+  - first:
+      213: -5364273882362959780
+    second: SMATTO_Anim_Spritesheet_2
+  - first:
+      213: 3142641041354325798
+    second: SMATTO_Anim_Spritesheet_3
+  - first:
+      213: -3144813633635593702
+    second: SMATTO_Anim_Spritesheet_4
+  - first:
+      213: -5343878395330216167
+    second: SMATTO_Anim_Spritesheet_5
+  - first:
+      213: 4880933644174105608
+    second: SMATTO_Anim_Spritesheet_6
+  - first:
+      213: -2951253793442820226
+    second: SMATTO_Anim_Spritesheet_7
+  - first:
+      213: 1719918730174311178
+    second: SMATTO_Anim_Spritesheet_8
+  - first:
+      213: -5419993785777964021
+    second: SMATTO_Anim_Spritesheet_9
+  - first:
+      213: -6794183674882295964
+    second: SMATTO_Anim_Spritesheet_10
+  - first:
+      213: 1753740598586000117
+    second: SMATTO_Anim_Spritesheet_11
+  - first:
+      213: -9153194399459290288
+    second: SMATTO_Anim_Spritesheet_12
+  - first:
+      213: -6338706156233099512
+    second: SMATTO_Anim_Spritesheet_13
+  - first:
+      213: -2172679443514360786
+    second: SMATTO_Anim_Spritesheet_14
+  - first:
+      213: -6623179410455048340
+    second: SMATTO_Anim_Spritesheet_15
+  - first:
+      213: -6199780004521614582
+    second: SMATTO_Anim_Spritesheet_16
+  - first:
+      213: -8395159106415870530
+    second: SMATTO_Anim_Spritesheet_17
+  - first:
+      213: -944844769351707030
+    second: SMATTO_Anim_Spritesheet_18
+  - first:
+      213: -5239636229637770335
+    second: SMATTO_Anim_Spritesheet_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 190
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f58c2e536e025b0800000000000000
+      internalID: -5395059234477416657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 190
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5f783897de75af0800000000000000
+      internalID: -407596135100189206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 190
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58a9db33554e85b0800000000000000
+      internalID: -5364273882362959780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 190
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ffc7e6067ec9b20800000000000000
+      internalID: 3142641041354325798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 190
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12585289a06b54d0800000000000000
+      internalID: -3144813633635593702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f357b99eab6d5b0800000000000000
+      internalID: -5343878395330216167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 133
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c10410a4f8cb340800000000000000
+      internalID: 4880933644174105608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 132
+        width: 43
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f01dfaf4a0b07d0800000000000000
+      internalID: -2951253793442820226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 133
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ba49af8f06ed710800000000000000
+      internalID: 1719918730174311178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 133
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c31e14e5058c4b0800000000000000
+      internalID: -5419993785777964021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 79
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467f1efd1f536b1a0800000000000000
+      internalID: -6794183674882295964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 77
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f246ee58c9865810800000000000000
+      internalID: 1753740598586000117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 77
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053522c703259f080800000000000000
+      internalID: -9153194399459290288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 77
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807f426b5546808a0800000000000000
+      internalID: -6338706156233099512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 77
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c7886be8719d1e0800000000000000
+      internalID: -2172679443514360786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 77
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f4524da6db514a0800000000000000
+      internalID: -6623179410455048340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 20
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a036be80fe4f5f9a0800000000000000
+      internalID: -6199780004521614582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 20
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd323da5476e7b80800000000000000
+      internalID: -8395159106415870530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 19
+        width: 43
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66d7e230bc33e2f0800000000000000
+      internalID: -944844769351707030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 20
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a37c242c921947b0800000000000000
+      internalID: -5239636229637770335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
