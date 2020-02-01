@@ -15,12 +15,12 @@ public class MainGameManager : MonoBehaviour
     DamManager dam1;
     DamManager dam2;
     public GameState status = GameState.NOT_STARTED;
-
+    public static string a = "aaa";
     public static MainGameManager current;
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         MainGameManager.current = this;
         controllers = new TeamChoice[4];
         controllers = FindObjectsOfType<TeamChoice>();
