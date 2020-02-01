@@ -108,6 +108,18 @@ public class Character : MonoBehaviour {
         action = CharacterAction.ActionCoolDown;
         StartCoroutine(waitForAction(1f, CharacterAction.WaitingForAction));
         //SpecialAbilityScript
+        if (gameObject.tag.Equals("Collector"))
+        {
+            Debug.Log("Here");
+        }
+        else if (gameObject.tag.Equals("Defender"))
+        {
+
+        }
+        else if (gameObject.tag.Equals("Fighter"))
+        {
+
+        }
     }
 
     IEnumerator waitForAction(float time, CharacterAction newAction)
