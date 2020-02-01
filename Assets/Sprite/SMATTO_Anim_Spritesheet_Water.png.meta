@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 6a1dff1ca098c477da531ccd3cf3a0db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1494083134902626421
+    second: SMATTO_Anim_Spritesheet_Water_0
+  - first:
+      213: 3093075270362899247
+    second: SMATTO_Anim_Spritesheet_Water_1
+  - first:
+      213: 7910787494836953916
+    second: SMATTO_Anim_Spritesheet_Water_2
+  - first:
+      213: 8135458511503841901
+    second: SMATTO_Anim_Spritesheet_Water_3
+  - first:
+      213: -362408639628621792
+    second: SMATTO_Anim_Spritesheet_Water_4
+  - first:
+      213: 3361335260811518577
+    second: SMATTO_Anim_Spritesheet_Water_5
+  - first:
+      213: 136642761890046601
+    second: SMATTO_Anim_Spritesheet_Water_6
+  - first:
+      213: 5313619566058323330
+    second: SMATTO_Anim_Spritesheet_Water_7
+  - first:
+      213: -7335905774374453987
+    second: SMATTO_Anim_Spritesheet_Water_8
+  - first:
+      213: -5699422721833867008
+    second: SMATTO_Anim_Spritesheet_Water_9
+  - first:
+      213: -8928739702321548344
+    second: SMATTO_Anim_Spritesheet_Water_10
+  - first:
+      213: -1941179810543483206
+    second: SMATTO_Anim_Spritesheet_Water_11
+  - first:
+      213: 8652422932503579120
+    second: SMATTO_Anim_Spritesheet_Water_12
+  - first:
+      213: 80944341525094812
+    second: SMATTO_Anim_Spritesheet_Water_13
+  - first:
+      213: 207084675494030864
+    second: SMATTO_Anim_Spritesheet_Water_14
+  - first:
+      213: -2887104550280788391
+    second: SMATTO_Anim_Spritesheet_Water_15
+  - first:
+      213: 5824526378106415216
+    second: SMATTO_Anim_Spritesheet_Water_16
+  - first:
+      213: 8527509142194054386
+    second: SMATTO_Anim_Spritesheet_Water_17
+  - first:
+      213: -1733045219224264051
+    second: SMATTO_Anim_Spritesheet_Water_18
+  - first:
+      213: -3957678273546516158
+    second: SMATTO_Anim_Spritesheet_Water_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 196
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b871a370e43f34be0800000000000000
+      internalID: -1494083134902626421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 193
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23a681129fccea20800000000000000
+      internalID: 3093075270362899247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 192
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33eb5b3053c8cd60800000000000000
+      internalID: 7910787494836953916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 196
+        width: 48
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a5d17a964f6e070800000000000000
+      internalID: 8135458511503841901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_4
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 193
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028476b234778faf0800000000000000
+      internalID: -362408639628621792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1726aaf4c9cd5ae20800000000000000
+      internalID: 3361335260811518577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 139
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982a5933ed375e100800000000000000
+      internalID: 136642761890046601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 138
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28db872b7d4cdb940800000000000000
+      internalID: 5313619566058323330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 139
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d7ca4c090a13a90800000000000000
+      internalID: -7335905774374453987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 138
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0096d483b3597e0b0800000000000000
+      internalID: -5699422721833867008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c372371c8eb61480800000000000000
+      internalID: -8928739702321548344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 81
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab645634f3b8f05e0800000000000000
+      internalID: -1941179810543483206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_12
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 84
+        width: 48
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9c15a80d4931870800000000000000
+      internalID: 8652422932503579120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 80
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c916e2323729f1100800000000000000
+      internalID: 80944341525094812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 81
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01eaf394a66bfd200800000000000000
+      internalID: 207084675494030864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_15
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 84
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956891345b1fee7d0800000000000000
+      internalID: -2887104550280788391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 26
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078ece791efd4d050800000000000000
+      internalID: 5824526378106415216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 27
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f46f57526cc75670800000000000000
+      internalID: 8527509142194054386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_18
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 26
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82e2702e8cf2f7e0800000000000000
+      internalID: -1733045219224264051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_Water_19
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 27
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2498af134908319c0800000000000000
+      internalID: -3957678273546516158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

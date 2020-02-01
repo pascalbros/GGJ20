@@ -110,6 +110,8 @@ public class Character : MonoBehaviour {
         //SpecialAbilityScript
         if (gameObject.tag.Equals("Collector"))
         {
+            DashClass dash = gameObject.GetComponent<DashClass>();
+            dash.Dash(dirX, dirY);
             Debug.Log("Collector");
         }
         else if (gameObject.tag.Equals("Defender"))
