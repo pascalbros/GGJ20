@@ -21,10 +21,9 @@ public class MainGameManager : MonoBehaviour
     void Start()
     {
         MainGameManager.current = this;
-        this.StartGame();
     }
 
-    void StartGame() {
+    public void StartGame() {
         if (this.status != GameState.NOT_STARTED) { return; }
         this.status = GameState.STARTED;
         this.SetupDams();
