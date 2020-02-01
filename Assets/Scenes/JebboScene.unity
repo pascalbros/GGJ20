@@ -140,7 +140,12 @@ PrefabInstance:
     - target: {fileID: 5423693237040465365, guid: 4189facaaea254938a7666251bc0bb0c,
         type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Defender
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423693237040465365, guid: 4189facaaea254938a7666251bc0bb0c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Defender
       objectReference: {fileID: 0}
     - target: {fileID: 5423693237040465366, guid: 4189facaaea254938a7666251bc0bb0c,
         type: 3}
@@ -584,6 +589,11 @@ PrefabInstance:
     - target: {fileID: 8326840631488388379, guid: a4757569bdea34466963ed76c266add4,
         type: 3}
       propertyPath: m_Name
+      value: Collector
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326840631488388379, guid: a4757569bdea34466963ed76c266add4,
+        type: 3}
+      propertyPath: m_TagString
       value: Collector
       objectReference: {fileID: 0}
     - target: {fileID: 8326840631488388381, guid: a4757569bdea34466963ed76c266add4,
