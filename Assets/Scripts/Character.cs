@@ -8,14 +8,15 @@ public class Character : MonoBehaviour {
 
 	[SerializeField]
 	float moveSpeed = 2f;
-
+    float throwForce = 80f;
     Animator anim;
 
-	//[SerializeField]
-	//Transform gun;
-	//[SerializeField]
-	//Rigidbody2D bullet;
+    //[SerializeField]
+    //Transform gun;
+    //[SerializeField]
+    //Rigidbody2D bullet;
 
+    GameObject damObject;
     CharacterState state;
     CharacterAction action;
     public enum CharacterState
@@ -56,7 +57,7 @@ public class Character : MonoBehaviour {
 		dirY = Mathf.RoundToInt(Input.GetAxis ("Vertical"));
 
 		transform.position = Vector2.Lerp(transform.position, new Vector2 (dirX  + transform.position.x, dirY  + transform.position.y), Time.deltaTime * moveSpeed);
-
+        
         //if (state == CharacterState.Swimming) RotateSwim();
         //else if(state == CharacterState.Walking) RotateWalk();
     }
@@ -69,19 +70,55 @@ public class Character : MonoBehaviour {
         }
         if (action == CharacterAction.BringingObject)
         {
-
+            damObject.transform.position = Vector2.Lerp(damObject.transform.position, new Vector2(transform.position.x, transform.position.y) + new Vector2(dirX, dirY)/(1+Mathf.Abs(dirX)+Mathf.Abs(dirY)), Time.deltaTime/(Vector2.Distance(transform.position, damObject.transform.position)+.1f));
             if (Input.GetButtonUp("Fire1")) ReleaseObject();
             if (Input.GetButtonDown("Fire2")) ThrowObject();
         }
     }
 
-    void Fire ()
+    void GrabObject ()
 	{
-		if (Input.GetButtonDown ("Fire1")) {
-			
-		}
+        if (damObject != null)
+        {
+            damObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            damObject.transform.parent = this.gameObject.transform;
+            action = CharacterAction.BringingObject;
+        }
 		
 	}
+
+    void SpecialAction()
+    {
+        action = CharacterAction.ActionCoolDown;
+        StartCoroutine(waitForAction(1f));
+        //SpecialAbilityScript
+    }
+
+    IEnumerator waitForAction(float time)
+    {
+        yield return new WaitForSeconds(time);
+    }
+
+    void ReleaseObject()
+    {
+        if (damObject != null)
+        {
+            damObject.transform.parent = null;
+            damObject = null;
+            action = CharacterAction.WaitingForAction;
+        }
+    }
+
+    void ThrowObject()
+    {
+        if (damObject != null)
+        {
+            damObject.transform.parent = null;
+            damObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(dirX, dirY)*throwForce);
+            damObject = null;
+            action = CharacterAction.WaitingForAction;
+        }
+    }
 
     void RotateSwim()
     {
@@ -212,12 +249,20 @@ public class Character : MonoBehaviour {
         {
             state = CharacterState.Swimming;
         }
+        else if (collision.gameObject.layer == 8)
+        {
+            damObject = collision.gameObject;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 4)
         {
             state = CharacterState.Walking;
+        }
+        else if (collision.gameObject.layer == 8 && action!=CharacterAction.BringingObject)
+        {
+            damObject = null;
         }
     }
 }
