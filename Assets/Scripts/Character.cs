@@ -166,6 +166,8 @@ public class Character : MonoBehaviour {
             damObject.transform.parent = null;
             Destroy(damObject.gameObject);
             damObject = null;
+            action = CharacterAction.WaitingForAction;
+            objectHolded = false;
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DamColliderManager : MonoBehaviour
 {
+    public AudioClip onDamLifeUp;
     public DamScoreManager scoreManager;
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class DamColliderManager : MonoBehaviour
             if (isTeamMate) {
                 OnTeamMateEntered(character);
             } else {
-                OnEnemyEntered(col.gameObject);
+                //OnEnemyEntered(col.gameObject);
             }
         }
     }
@@ -45,7 +46,7 @@ public class DamColliderManager : MonoBehaviour
         if (hasObject) { //if team mate has got an object
             scoreManager.AddLife(0.05f);
             teamMate.DestroyObject();
-            //player release the object
+            this.GetComponent<AudioSource>().PlayOneShot(this.onDamLifeUp, 1.0f);
         }
     }
 

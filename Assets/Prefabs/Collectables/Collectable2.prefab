@@ -128,7 +128,7 @@ MonoBehaviour:
   onCollectedClip: {fileID: 8300000, guid: 6d6b3d48c68db44ca9b29841f2af01a7, type: 3}
   speed: 1
   speedRange: 0.5
-  minY: -4
+  minY: -3.5
 --- !u!82 &4391224912529793396
 AudioSource:
   m_ObjectHideFlags: 0
