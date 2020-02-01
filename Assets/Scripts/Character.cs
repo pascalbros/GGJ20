@@ -71,7 +71,7 @@ public class Character : MonoBehaviour {
             dirX = Mathf.RoundToInt(Input.GetAxis("Horizontal"));
             dirY = Mathf.RoundToInt(Input.GetAxis("Vertical"));
 
-            transform.position = Vector2.Lerp(transform.position, new Vector2(dirX + transform.position.x, dirY + transform.position.y), Time.deltaTime * moveSpeed);
+            transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x, transform.position.y) + new Vector2(dirX , dirY ).normalized, Time.deltaTime * moveSpeed);
 
             Rotate();
         }
@@ -224,7 +224,7 @@ public class Character : MonoBehaviour {
         else if (collision.gameObject.layer == 8)
         {
             Debug.Log("pippide");
-            if (collision.GetComponent<Throwable>().throwing&& GetComponent<Throwable>().teamOwner != team)
+            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team)
             {
                 
                 CharacterState newState = state;

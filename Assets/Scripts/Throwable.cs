@@ -31,7 +31,7 @@ public class Throwable : MonoBehaviour
             Debug.Log(dirY);
             if (dirY>=0) GetComponent<SpriteRenderer>().sortingOrder = -1;
             else GetComponent<SpriteRenderer>().sortingOrder = 1;
-            transform.position = Vector2.Lerp(transform.position, new Vector2(owner.position.x, owner.position.y) + new Vector2(dirX/1.3f, dirY/2f) / (1 + Mathf.Abs(dirX) + Mathf.Abs(dirY)), Time.deltaTime / (Vector2.Distance(transform.position, owner.position) + .1f));
+            if(dirX!=0||dirY!=0) transform.position = Vector2.Lerp(transform.position, new Vector2(owner.position.x, owner.position.y) + new Vector2(dirX/1.3f, dirY/2f) / (1 + Mathf.Abs(dirX) + Mathf.Abs(dirY)), Time.deltaTime / (Vector2.Distance(transform.position, owner.position) + .1f));
         }
     }
 
