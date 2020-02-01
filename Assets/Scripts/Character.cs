@@ -9,10 +9,7 @@ public class Character : MonoBehaviour {
 	[SerializeField]
 	float moveSpeed = 2f;
 
-	[SerializeField]
-	float bulletSpeed = 5f;
-
-	Animator anim;
+    Animator anim;
 
 	//[SerializeField]
 	//Transform gun;
