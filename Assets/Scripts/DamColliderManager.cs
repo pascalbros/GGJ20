@@ -27,7 +27,6 @@ public class DamColliderManager : MonoBehaviour
                 OnEnemyEntered(col.gameObject);
             }
         }
-        Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
     }
 
     private void OnTeamMateEntered(GameObject teamMate) {
