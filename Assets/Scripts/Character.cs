@@ -254,10 +254,8 @@ public class Character : MonoBehaviour {
         {
             if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team && state!= CharacterState.Stunned)
             {
-                
-                CharacterState newState = state;
-                state = CharacterState.Stunned;
-                StartCoroutine(waitForState(1, newState));
+
+                stunnPlayer();
                 
             }
             else if (!collision.GetComponent<Throwable>().stealing)
@@ -266,6 +264,12 @@ public class Character : MonoBehaviour {
                 GrabObject();
             }
         }
+    }
+    public void stunnPlayer()
+    {
+        CharacterState newState = state;
+        state = CharacterState.Stunned;
+        StartCoroutine(waitForState(1, newState));
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
