@@ -29,20 +29,21 @@ public class Character : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		rotateAngle = 0f;
-		anim = GetComponent<Animator> ();
-		anim.speed = 1;
-        state = CharacterState.Swimming;
+		//anim = GetComponent<Animator> ();
+		//anim.speed = 1;
+        state = CharacterState.Walking;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         Move();
-        if (state == CharacterState.Swimming) RotateSwim();
-        else if(state == CharacterState.Walking) RotateWalk();
+        //if (state == CharacterState.Swimming) RotateSwim();
+        //else if(state == CharacterState.Walking) RotateWalk();
+        Debug.Log(state);
 
-	}
+    }
 
-	void Move()
+    void Move()
 	{
 		dirX = Mathf.RoundToInt(Input.GetAxis ("Horizontal"));
 		dirY = Mathf.RoundToInt(Input.GetAxis ("Vertical"));
@@ -182,5 +183,19 @@ public class Character : MonoBehaviour {
 		//gun.rotation = Quaternion.Euler (0f, 0f, rotateAngle);
 
 	}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
 
+        if (collision.gameObject.layer == 4)
+        {
+            state = CharacterState.Swimming;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 4)
+        {
+            state = CharacterState.Walking;
+        }
+    }
 }
