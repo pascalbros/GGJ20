@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TeamChoice : MonoBehaviour
 {
-    int counter;
+    public int team;
     bool wait;
     public int playerId;
     public bool confirmed;
@@ -13,7 +13,7 @@ public class TeamChoice : MonoBehaviour
     void Start()
     {
         confirmed = false;
-        counter = 1;
+        team = 1;
         wait = true;
     }
 
@@ -22,10 +22,10 @@ public class TeamChoice : MonoBehaviour
     {
         if (wait && Input.GetAxis("Horizontal" + playerId) != 0)
         {
-            counter = Mathf.Clamp(counter + Mathf.RoundToInt(Input.GetAxis("Horizontal" + playerId)), 0, 2);
+            team = Mathf.Clamp(team + Mathf.RoundToInt(Input.GetAxis("Horizontal" + playerId)), 0, 2);
             StartCoroutine(waitForNextSwap());
         }
-        transform.position = position[counter];
+        transform.position = position[team];
         if (Input.GetButtonDown("XButton" + playerId)) confirmed = true;
         if (Input.GetButtonDown("YButton" + playerId)) confirmed = false;
     }
