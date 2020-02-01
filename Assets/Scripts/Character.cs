@@ -17,14 +17,19 @@ public class Character : MonoBehaviour {
 	//Rigidbody2D bullet;
 
     CharacterState state;
-
+    CharacterAction action;
     public enum CharacterState
     {
         Swimming,
-        Walking
-        
+        Walking,
+        Stunned
     }
-
+    public enum CharacterAction
+    {
+        WaitingForAction,
+        BringingObject,
+        ActionCoolDown
+    }
     
     // Use this for initialization
     void Start () {
@@ -32,15 +37,17 @@ public class Character : MonoBehaviour {
 		//anim = GetComponent<Animator> ();
 		//anim.speed = 1;
         state = CharacterState.Walking;
+        action = CharacterAction.WaitingForAction;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         Move();
-        //if (state == CharacterState.Swimming) RotateSwim();
-        //else if(state == CharacterState.Walking) RotateWalk();
+        
         Debug.Log(state);
 
+        Action();
     }
 
     void Move()
@@ -48,12 +55,27 @@ public class Character : MonoBehaviour {
 		dirX = Mathf.RoundToInt(Input.GetAxis ("Horizontal"));
 		dirY = Mathf.RoundToInt(Input.GetAxis ("Vertical"));
 
-		transform.position = new Vector2 (dirX * moveSpeed * Time.deltaTime + transform.position.x,
-			dirY * moveSpeed * Time.deltaTime + transform.position.y);
-	}
+		transform.position = Vector2.Lerp(transform.position, new Vector2 (dirX  + transform.position.x, dirY  + transform.position.y), Time.deltaTime * moveSpeed);
 
-    
-	void Fire ()
+        //if (state == CharacterState.Swimming) RotateSwim();
+        //else if(state == CharacterState.Walking) RotateWalk();
+    }
+
+    void Action() {
+        if (action == CharacterAction.WaitingForAction)
+        {
+            if (Input.GetButtonDown("Fire1")) GrabObject();
+            if (Input.GetButtonDown("Fire2")) SpecialAction();
+        }
+        if (action == CharacterAction.BringingObject)
+        {
+
+            if (Input.GetButtonUp("Fire1")) ReleaseObject();
+            if (Input.GetButtonDown("Fire2")) ThrowObject();
+        }
+    }
+
+    void Fire ()
 	{
 		if (Input.GetButtonDown ("Fire1")) {
 			
