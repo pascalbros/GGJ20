@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
-  playerId: 1
+  playerId: 2
   confirmed: 0
   position:
   - {x: -6.34, y: 0.59}
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
-  playerId: 1
+  playerId: 4
   confirmed: 0
   position:
   - {x: -6.34, y: -3.59}
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
-  playerId: 1
+  playerId: 3
   confirmed: 0
   position:
   - {x: -6.34, y: -1.69}
