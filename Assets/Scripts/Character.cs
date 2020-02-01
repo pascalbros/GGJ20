@@ -98,7 +98,7 @@ public class Character : MonoBehaviour {
             damObject.transform.parent = this.gameObject.transform;
             action = CharacterAction.BringingObject;
             
-            damObject.grabObject(transform, team);
+            damObject.grabObject(transform, team, playerId);
         }
 		
 	}
@@ -134,7 +134,7 @@ public class Character : MonoBehaviour {
         state = newState;
 
     }
-    void ReleaseObject()
+    public void ReleaseObject()
     {
         if (damObject != null)
         {
@@ -145,17 +145,20 @@ public class Character : MonoBehaviour {
 
         }
     }
-
+    
+    
     void ThrowObject()
     {
-        if (damObject != null)
+        if (damObject != null && damObject.ownerID == playerId)
         {
             damObject.transform.parent = null;
-            damObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(dirX, dirY)*throwForce);
+            damObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(dirX, dirY) * throwForce);
             damObject.throwObject();
             damObject = null;
             action = CharacterAction.WaitingForAction;
         }
+        else
+            damObject = null;
     }
 
     void Rotate()
@@ -235,7 +238,7 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8)
         {
-            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team)
+            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team && state!= CharacterState.Stunned)
             {
                 
                 CharacterState newState = state;
