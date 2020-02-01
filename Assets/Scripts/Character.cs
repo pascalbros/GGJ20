@@ -110,15 +110,15 @@ public class Character : MonoBehaviour {
         //SpecialAbilityScript
         if (gameObject.tag.Equals("Collector"))
         {
-            Debug.Log("Here");
+            Debug.Log("Collector");
         }
         else if (gameObject.tag.Equals("Defender"))
         {
-
+            Debug.Log("Defender");
         }
         else if (gameObject.tag.Equals("Fighter"))
         {
-
+            Debug.Log("Fighter");
         }
     }
 
