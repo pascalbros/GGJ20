@@ -266,4 +266,26 @@ public class Character : MonoBehaviour {
             damObject = null;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.GetComponent<Character>() != null)
+        {
+            if(collision.gameObject.GetComponent<Character>().playerId == 0 && collision.gameObject.GetComponent<Character>().team == this.team)
+            {
+               // Debug.Log();
+                ChangeChar(collision.gameObject);
+            }
+           
+        }
+    }
+
+    public void ChangeChar(GameObject nextBeaver)
+    {
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        nextBeaver.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        nextBeaver.GetComponent<Character>().playerId = playerId;
+        this.playerId = 0;
+      
+    }
 }
