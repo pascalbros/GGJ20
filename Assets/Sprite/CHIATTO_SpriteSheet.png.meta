@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 9677ed3226a8a4e36807f94ba7f20655
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1452968370182796877
+    second: CHIATTO_SpriteSheet_0
+  - first:
+      213: 8990568777948705261
+    second: CHIATTO_SpriteSheet_1
+  - first:
+      213: 6468382036741703152
+    second: CHIATTO_SpriteSheet_2
+  - first:
+      213: -1822850714170163276
+    second: CHIATTO_SpriteSheet_3
+  - first:
+      213: 7480002065844138398
+    second: CHIATTO_SpriteSheet_4
+  - first:
+      213: -4660503551891582568
+    second: CHIATTO_SpriteSheet_5
+  - first:
+      213: -2770535632783528321
+    second: CHIATTO_SpriteSheet_6
+  - first:
+      213: 8563488162725518350
+    second: CHIATTO_SpriteSheet_7
+  - first:
+      213: 3900921544875118296
+    second: CHIATTO_SpriteSheet_8
+  - first:
+      213: 1402177846859248722
+    second: CHIATTO_SpriteSheet_9
+  - first:
+      213: 1473731751210972545
+    second: CHIATTO_SpriteSheet_10
+  - first:
+      213: -2485380504511398399
+    second: CHIATTO_SpriteSheet_11
+  - first:
+      213: 2440267290292755425
+    second: CHIATTO_SpriteSheet_12
+  - first:
+      213: 6943847796108100562
+    second: CHIATTO_SpriteSheet_13
+  - first:
+      213: -201891271315809780
+    second: CHIATTO_SpriteSheet_14
+  - first:
+      213: 4254634028488871529
+    second: CHIATTO_SpriteSheet_15
+  - first:
+      213: -5381479205789016342
+    second: CHIATTO_SpriteSheet_16
+  - first:
+      213: -2995024511560210291
+    second: CHIATTO_SpriteSheet_17
+  - first:
+      213: -9065853519905259215
+    second: CHIATTO_SpriteSheet_18
+  - first:
+      213: 3834374881933611950
+    second: CHIATTO_SpriteSheet_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 183
+        width: 69
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46bf96d80bf92410800000000000000
+      internalID: 1452968370182796877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 183
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1b9526baae4cc70800000000000000
+      internalID: 8990568777948705261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 183
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5c183013f44c950800000000000000
+      internalID: 6468382036741703152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 183
+        width: 69
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bff15feeeee3b6e0800000000000000
+      internalID: -1822850714170163276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 183
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91f3d58f3e4ec760800000000000000
+      internalID: 7480002065844138398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 184
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8915e0346b0925fb0800000000000000
+      internalID: -4660503551891582568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 125
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e206a55841d89d0800000000000000
+      internalID: -2770535632783528321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 125
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c5489dc1f97d670800000000000000
+      internalID: 8563488162725518350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 125
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de03f22a7bd22630800000000000000
+      internalID: 3900921544875118296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 125
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254b7f99259857310800000000000000
+      internalID: 1402177846859248722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 70
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185f425383fb37410800000000000000
+      internalID: 1473731751210972545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 69
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ebae86997228dd0800000000000000
+      internalID: -2485380504511398399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 69
+        width: 69
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb97e2eb229dd120800000000000000
+      internalID: 2440267290292755425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 69
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3076dc7c08d5060800000000000000
+      internalID: 6943847796108100562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 69
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a18f955fcb23df0800000000000000
+      internalID: -201891271315809780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 69
+        width: 69
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e4e5d5b1f7b0b30800000000000000
+      internalID: 4254634028488871529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 11
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee5bc4bc252155b0800000000000000
+      internalID: -5381479205789016342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 11
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88add633198f66d0800000000000000
+      internalID: -2995024511560210291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 11
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1318250b14e9f2280800000000000000
+      internalID: -9065853519905259215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 11
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea35555c3af663530800000000000000
+      internalID: 3834374881933611950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

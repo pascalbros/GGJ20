@@ -159,7 +159,7 @@ public class Character : MonoBehaviour {
 
         if (dirX == 0 && dirY == 0)
         {
-            anim.speed = 0;
+            anim.speed = 1;
             anim.SetInteger("Direction", 0);
         }
 
