@@ -20,8 +20,28 @@ public class DamColliderManager : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player") {
-            scoreManager.AddLife(0.05f);
+            bool isTeamMate = true;
+            if (isTeamMate) {
+                OnTeamMateEntered(col.gameObject);
+            } else {
+                OnEnemyEntered(col.gameObject);
+            }
         }
         Debug.Log(col.gameObject.name + " : " + gameObject.name + " : " + Time.time);
+    }
+
+    private void OnTeamMateEntered(GameObject teamMate) {
+        bool hasObject = true;
+        if (hasObject) { //if team mate has got an object
+            scoreManager.AddLife(0.05f);
+            //player release the object
+        }
+    }
+
+    private void OnEnemyEntered(GameObject enemy) {
+        bool hasObject = false;
+        if (hasObject) { return; }
+        scoreManager.AddLife(-0.05f);
+        //player get an object
     }
 }

@@ -39,7 +39,6 @@ public class DamScoreManager : MonoBehaviour
         if (this.status == DamState.STARTED) {
             this.life -= this.lifeLostPerSecond * Time.deltaTime;
             this.life = Mathf.Clamp(this.life, 0.0f, 1.0f);
-            Debug.Log(percentage);
             if (this.life == 0.0f) {
                 OnDestroyed();
             }
@@ -49,6 +48,8 @@ public class DamScoreManager : MonoBehaviour
         if (nextLifeCheckTime >= 1.0f ) {
             nextLifeCheckTime = 0.0f;
             this.CheckTexture();
+            Debug.Log(percentage);
+
         }
     }
 
@@ -64,6 +65,7 @@ public class DamScoreManager : MonoBehaviour
     private void CheckTexture() {
         float value = 1.0f/this.sprites.Length;
         int index = (this.sprites.Length - 1) - (int)(this.life / value);
+        if (this.spriteRenderer.sprite == this.sprites[index]) { return; }
         this.spriteRenderer.sprite = this.sprites[index];
     }
 
