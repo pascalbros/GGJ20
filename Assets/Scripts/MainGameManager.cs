@@ -11,20 +11,39 @@ public enum GameState {
 
 public class MainGameManager : MonoBehaviour
 {
-
-    public DamManager dam1;
-    public DamManager dam2;
+    TeamChoice[] controllers;
+    DamManager dam1;
+    DamManager dam2;
     public GameState status = GameState.NOT_STARTED;
 
     public static MainGameManager current;
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this);
         MainGameManager.current = this;
+        controllers = new TeamChoice[4];
+        controllers = FindObjectsOfType<TeamChoice>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (allApproved()) StartGame();
+    }
+
+    bool allApproved()
+    {
+        foreach(TeamChoice p in controllers)
+        {
+            if (!p.confirmed) return false;
+        }
+        return true;
     }
 
     public void StartGame() {
         if (this.status != GameState.NOT_STARTED) { return; }
+        SceneManager.LoadScene("Game");
+
         this.status = GameState.STARTED;
         this.SetupDams();
         this.SetupPlayers();
@@ -36,6 +55,8 @@ public class MainGameManager : MonoBehaviour
             Debug.LogError("Unable to find dams");
             return;
         }
+        dam1=FindObjectsOfType<DamManager>()[0];
+        dam2 = FindObjectsOfType<DamManager>()[1];
         this.dam1.scoreManager.teamIndex = 0;
         this.dam1.scoreManager.status = DamState.STARTED;
         this.dam1.onDamDestroyed = this.OnDam1Destroyed;

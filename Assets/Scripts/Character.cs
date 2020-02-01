@@ -5,7 +5,8 @@ using UnityEngine;
 public class Character : MonoBehaviour {
 
 	float dirX, dirY, rotateAngle;
-
+    public int team=1;
+    public int playerId = 1;
 	[SerializeField]
 	float moveSpeed = 2f;
 
@@ -18,7 +19,7 @@ public class Character : MonoBehaviour {
     //[SerializeField]
     //Rigidbody2D bullet;
 
-    GameObject damObject;
+    Throwable damObject;
     CharacterState state;
     CharacterAction action;
     public enum CharacterState
@@ -54,47 +55,50 @@ public class Character : MonoBehaviour {
     }
 
     void Move()
-	{
-        if (state == CharacterState.Walking)
+    {
+        if (state != CharacterState.Stunned)
         {
-            anim.SetBool("OnGround", true);
+            if (state == CharacterState.Walking)
+            {
+                anim.SetBool("OnGround", true);
 
+            }
+            else if (state == CharacterState.Swimming)
+            {
+                anim.SetBool("OnGround", false);
+            }
+
+
+            dirX = Mathf.RoundToInt(Input.GetAxis("Horizontal"+playerId));
+            dirY = Mathf.RoundToInt(Input.GetAxis("Vertical"+playerId));
+
+            transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x, transform.position.y) + new Vector2(dirX , dirY ).normalized, Time.deltaTime * moveSpeed);
+
+            Rotate();
         }
-        else if (state == CharacterState.Swimming)
-        {
-            anim.SetBool("OnGround", false);
-        }
-
-		dirX = Mathf.RoundToInt(Input.GetAxis ("Horizontal"));
-		dirY = Mathf.RoundToInt(Input.GetAxis ("Vertical"));
-
-		transform.position = Vector2.Lerp(transform.position, new Vector2 (dirX  + transform.position.x, dirY  + transform.position.y), Time.deltaTime * moveSpeed);
-
-        Rotate();
     }
+    
 
     void Action() {
         if (action == CharacterAction.WaitingForAction)
         {
-            if (Input.GetButtonDown("Fire1")) GrabObject();
-            if (Input.GetButtonDown("Fire2")) SpecialAction();
+            if (Input.GetButtonDown("XButton" + playerId)) SpecialAction();
         }
         if (action == CharacterAction.BringingObject)
         {
-            damObject.transform.position = Vector2.Lerp(damObject.transform.position, new Vector2(transform.position.x, transform.position.y) + new Vector2(dirX, dirY)/(1+Mathf.Abs(dirX)+Mathf.Abs(dirY)), Time.deltaTime/(Vector2.Distance(transform.position, damObject.transform.position)+.1f));
-            if (Input.GetButtonUp("Fire1")) ReleaseObject();
-            if (Input.GetButtonDown("Fire2")) ThrowObject();
+            if (Input.GetButtonUp("XButton" + playerId)) ThrowObject();
         }
     }
 
     void GrabObject ()
 	{
-        if (damObject != null)
+        if (damObject != null && damObject.canBeGrabbed())
         {
-            Debug.Log("aaa");
             damObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             damObject.transform.parent = this.gameObject.transform;
             action = CharacterAction.BringingObject;
+            
+            damObject.grabObject(transform, team, playerId);
         }
 		
 	}
@@ -102,35 +106,59 @@ public class Character : MonoBehaviour {
     void SpecialAction()
     {
         action = CharacterAction.ActionCoolDown;
-        StartCoroutine(waitForAction(1f));
+        StartCoroutine(waitForAction(1f, CharacterAction.WaitingForAction));
         //SpecialAbilityScript
+        if (gameObject.tag.Equals("Collector"))
+        {
+            Debug.Log("Collector");
+        }
+        else if (gameObject.tag.Equals("Defender"))
+        {
+            Debug.Log("Defender");
+        }
+        else if (gameObject.tag.Equals("Fighter"))
+        {
+            Debug.Log("Fighter");
+        }
     }
 
-    IEnumerator waitForAction(float time)
+    IEnumerator waitForAction(float time, CharacterAction newAction)
     {
         yield return new WaitForSeconds(time);
-        action = CharacterAction.WaitingForAction;
+        action = newAction;
+        
     }
+    IEnumerator waitForState(float time, CharacterState newState)
+    {
+        yield return new WaitForSeconds(time);
+        state = newState;
 
-    void ReleaseObject()
+    }
+    public void ReleaseObject()
     {
         if (damObject != null)
         {
             damObject.transform.parent = null;
+            damObject.releaseObject();
             damObject = null;
             action = CharacterAction.WaitingForAction;
+
         }
     }
-
+    
+    
     void ThrowObject()
     {
-        if (damObject != null)
+        if (damObject != null && damObject.ownerID == playerId)
         {
             damObject.transform.parent = null;
-            damObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(dirX, dirY)*throwForce);
+            damObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(dirX, dirY) * throwForce);
+            damObject.throwObject();
             damObject = null;
             action = CharacterAction.WaitingForAction;
         }
+        else
+            damObject = null;
     }
 
     void Rotate()
@@ -210,8 +238,19 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8)
         {
-            Debug.Log("bbb");
-            damObject = collision.gameObject;
+            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team && state!= CharacterState.Stunned)
+            {
+                
+                CharacterState newState = state;
+                state = CharacterState.Stunned;
+                StartCoroutine(waitForState(1, newState));
+                
+            }
+            else if (!collision.GetComponent<Throwable>().stealing)
+            {
+                damObject = collision.GetComponent<Throwable>();
+                GrabObject();
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
