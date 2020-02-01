@@ -11,39 +11,40 @@ public enum GameState {
 
 public class MainGameManager : MonoBehaviour
 {
-    TeamChoice[] controllers;
-    DamManager dam1;
-    DamManager dam2;
+    public static TeamChoice[] controllers = new TeamChoice[4];
+    public DamManager dam1;
+    public DamManager dam2;
     public GameState status = GameState.NOT_STARTED;
 
     public static MainGameManager current;
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this);
         MainGameManager.current = this;
-        controllers = new TeamChoice[4];
-        controllers = FindObjectsOfType<TeamChoice>();
     }
 
-    private void FixedUpdate()
+    public static bool allApproved()
     {
-        if (allApproved()) StartGame();
-    }
-
-    bool allApproved()
-    {
-        foreach(TeamChoice p in controllers)
-        {
-            if (!p.confirmed) return false;
+        int team1Players = 0;
+        int team2Players = 0;
+        foreach(TeamChoice p in MainGameManager.controllers) {
+            if (p.team == 0) {
+                team1Players += 1;
+            } else if (p.team == 2) {
+                team2Players += 1;
+            } else { 
+                return false;
+            }
+            if (!p.confirmed) { return false; };
         }
+        // if (team1Players != 2 || team2Players != 2) {
+        //     return false;
+        // }
         return true;
     }
 
     public void StartGame() {
         if (this.status != GameState.NOT_STARTED) { return; }
-        SceneManager.LoadScene("Game");
-
         this.status = GameState.STARTED;
         this.SetupDams();
         this.SetupPlayers();
