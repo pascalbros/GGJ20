@@ -151,6 +151,20 @@ public class Character : MonoBehaviour {
 
         }
     }
+
+    public void DestroyObject()
+    {
+        if (damObject != null)
+        {
+            damObject.transform.parent = null;
+            Destroy(damObject.gameObject);
+            damObject = null;
+        }
+    }
+
+    public bool hasObject() {
+        return this.damObject != null;
+    }
     
     
     void ThrowObject()

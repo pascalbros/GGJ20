@@ -57,13 +57,11 @@ public class MainGameManager : MonoBehaviour
             Debug.LogError("Unable to find dams");
             return;
         }
-        dam1=FindObjectsOfType<DamManager>()[0];
-        dam2 = FindObjectsOfType<DamManager>()[1];
-        this.dam1.scoreManager.teamIndex = 0;
+        this.dam1.scoreManager.teamIndex = 1;
         this.dam1.scoreManager.status = DamState.STARTED;
         this.dam1.onDamDestroyed = this.OnDam1Destroyed;
 
-        this.dam2.scoreManager.teamIndex = 1;
+        this.dam2.scoreManager.teamIndex = 2;
         this.dam2.scoreManager.status = DamState.STARTED;
         this.dam2.onDamDestroyed = this.OnDam2Destroyed;
     }
