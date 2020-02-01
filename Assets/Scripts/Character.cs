@@ -7,13 +7,14 @@ public class Character : MonoBehaviour {
 	float dirX, dirY, rotateAngle;
     public int team=1;
     public int playerId = 1;
+    bool objectHolded;
 	[SerializeField]
 	float moveSpeed = 2f;
 
     [SerializeField]
     float throwForce = 120f;
     Animator anim;
-
+    
     //[SerializeField]
     //Transform gun;
     //[SerializeField]
@@ -42,16 +43,22 @@ public class Character : MonoBehaviour {
 		anim.speed = 1;
         state = CharacterState.Walking;
         action = CharacterAction.WaitingForAction;
-	}
+        objectHolded = false;
+
+    }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        
+        if (playerId > 0)
+        {
+            Move();
+            Action();
+        }
+
         Debug.Log(state);
 
-        Action();
+        
     }
 
     void Move()
@@ -92,12 +99,12 @@ public class Character : MonoBehaviour {
 
     void GrabObject ()
 	{
-        if (damObject != null && damObject.canBeGrabbed())
+        if (damObject != null && damObject.canBeGrabbed()&&objectHolded==false)
         {
             damObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             damObject.transform.parent = this.gameObject.transform;
             action = CharacterAction.BringingObject;
-            
+            objectHolded = true;
             damObject.grabObject(transform, team, playerId);
         }
 		
@@ -116,10 +123,14 @@ public class Character : MonoBehaviour {
         }
         else if (gameObject.tag.Equals("Defender"))
         {
+            DefendClass defend = gameObject.GetComponent<DefendClass>();
+            defend.Defend();
             Debug.Log("Defender");
         }
         else if (gameObject.tag.Equals("Fighter"))
         {
+            FightClass fight = gameObject.GetComponent<FightClass>();
+            fight.Fight();
             Debug.Log("Fighter");
         }
     }
@@ -144,7 +155,7 @@ public class Character : MonoBehaviour {
             damObject.releaseObject();
             damObject = null;
             action = CharacterAction.WaitingForAction;
-
+            objectHolded = false;
         }
     }
     
@@ -158,6 +169,7 @@ public class Character : MonoBehaviour {
             damObject.throwObject();
             damObject = null;
             action = CharacterAction.WaitingForAction;
+            objectHolded = false;
         }
         else
             damObject = null;
@@ -242,10 +254,8 @@ public class Character : MonoBehaviour {
         {
             if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team && state!= CharacterState.Stunned)
             {
-                
-                CharacterState newState = state;
-                state = CharacterState.Stunned;
-                StartCoroutine(waitForState(1, newState));
+
+                stunnPlayer();
                 
             }
             else if (!collision.GetComponent<Throwable>().stealing)
@@ -255,6 +265,12 @@ public class Character : MonoBehaviour {
             }
         }
     }
+    public void stunnPlayer()
+    {
+        CharacterState newState = state;
+        state = CharacterState.Stunned;
+        StartCoroutine(waitForState(1, newState));
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 4)
@@ -263,6 +279,7 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8 && action!=CharacterAction.BringingObject)
         {
+            if (collision.GetComponent<Throwable>().throwing) collision.GetComponent<BoxCollider2D>().enabled = true;
             damObject = null;
         }
     }
