@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DefendClass : MonoBehaviour
 {
+    Character[] positions = new Character [6];
     // Start is called before the first frame update
     void Start()
     {
-        
+        positions = FindObjectsOfType<Character>();
     }
 
     // Update is called once per frame
@@ -17,6 +18,9 @@ public class DefendClass : MonoBehaviour
     }
     public void Defend()
     {
-
+        foreach(Character c in positions)
+        {
+            if (c != GetComponent<Character>() && Vector3.Distance(c.transform.position, transform.position) < 3) c.stunnPlayer();
+        }
     }
 }
