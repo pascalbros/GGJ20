@@ -7,7 +7,9 @@ public class Throwable : MonoBehaviour
     [SerializeField]
     public bool owned;
     Transform owner;
+    int ownerID;
     int dirX, dirY;
+
     public int teamOwner = 0;
     public bool stealing;
     public bool throwing;
@@ -26,8 +28,8 @@ public class Throwable : MonoBehaviour
     {
         if (owned)
         {
-            dirX = Mathf.RoundToInt(Input.GetAxis("Horizontal"));
-            dirY = Mathf.RoundToInt(Input.GetAxis("Vertical"));
+            dirX = Mathf.RoundToInt(Input.GetAxis("Horizontal"+ ownerID));
+            dirY = Mathf.RoundToInt(Input.GetAxis("Vertical"+ ownerID));
             Debug.Log(dirY);
             if (dirY>=0) GetComponent<SpriteRenderer>().sortingOrder = -1;
             else GetComponent<SpriteRenderer>().sortingOrder = 1;
@@ -52,11 +54,13 @@ public class Throwable : MonoBehaviour
         owned = true;
         owner = player;
         teamOwner = team;
+        ownerID = owner.GetComponent<Character>().playerId;
     }
     public void releaseObject()
     {
         owned = false;
         teamOwner = 0;
+        ownerID = 0;
     }
     public bool canBeGrabbed()
     {
@@ -72,5 +76,6 @@ public class Throwable : MonoBehaviour
         yield return new WaitForSeconds(1);
         throwing = false;
         teamOwner = 0;
+        ownerID = 0;
     }
 }

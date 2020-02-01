@@ -6,6 +6,7 @@ public class Character : MonoBehaviour {
 
 	float dirX, dirY, rotateAngle;
     public int team=1;
+    public int playerId = 1;
 	[SerializeField]
 	float moveSpeed = 2f;
 
@@ -68,8 +69,8 @@ public class Character : MonoBehaviour {
             }
 
 
-            dirX = Mathf.RoundToInt(Input.GetAxis("Horizontal"));
-            dirY = Mathf.RoundToInt(Input.GetAxis("Vertical"));
+            dirX = Mathf.RoundToInt(Input.GetAxis("Horizontal"+playerId));
+            dirY = Mathf.RoundToInt(Input.GetAxis("Vertical"+playerId));
 
             transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x, transform.position.y) + new Vector2(dirX , dirY ).normalized, Time.deltaTime * moveSpeed);
 
@@ -81,11 +82,11 @@ public class Character : MonoBehaviour {
     void Action() {
         if (action == CharacterAction.WaitingForAction)
         {
-            if (Input.GetButtonDown("Fire1")) SpecialAction();
+            if (Input.GetButtonDown("XButton" + playerId)) SpecialAction();
         }
         if (action == CharacterAction.BringingObject)
         {
-            if (Input.GetButtonUp("Fire1")) ThrowObject();
+            if (Input.GetButtonUp("XButton" + playerId)) ThrowObject();
         }
     }
 
@@ -119,7 +120,6 @@ public class Character : MonoBehaviour {
     {
         yield return new WaitForSeconds(time);
         state = newState;
-        Debug.Log(state+"aaa");
 
     }
     void ReleaseObject()
@@ -223,7 +223,6 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8)
         {
-            Debug.Log("pippide");
             if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team)
             {
                 
