@@ -7,7 +7,7 @@ public class Throwable : MonoBehaviour
     [SerializeField]
     public bool owned;
     Transform owner;
-    int ownerID;
+    public int ownerID;
     int dirX, dirY;
 
     public int teamOwner = 0;
@@ -30,10 +30,9 @@ public class Throwable : MonoBehaviour
         {
             dirX = Mathf.RoundToInt(Input.GetAxis("Horizontal"+ ownerID));
             dirY = Mathf.RoundToInt(Input.GetAxis("Vertical"+ ownerID));
-            Debug.Log(dirY);
             if (dirY>=0) GetComponent<SpriteRenderer>().sortingOrder = -1;
             else GetComponent<SpriteRenderer>().sortingOrder = 1;
-            if(dirX!=0||dirY!=0) transform.position = Vector2.Lerp(transform.position, new Vector2(owner.position.x, owner.position.y) + new Vector2(dirX/1.3f, dirY/2f) / (1 + Mathf.Abs(dirX) + Mathf.Abs(dirY)), Time.deltaTime / (Vector2.Distance(transform.position, owner.position) + .1f));
+            if(dirX!=0||dirY!=0) transform.position = Vector2.Lerp(transform.position, new Vector2(owner.position.x, owner.position.y) + new Vector2(dirX/1.3f, dirY/2f) / (1 + Mathf.Abs(dirX) + Mathf.Abs(dirY)), Time.deltaTime / (Vector2.Distance(transform.position, owner.position) + .01f));
         }
     }
 
@@ -44,17 +43,19 @@ public class Throwable : MonoBehaviour
         StartCoroutine(stopThrowing());
     }
 
-    public void grabObject(Transform player, int team)
+    public void grabObject(Transform player, int team, int playerId)
     {
-        if (owned)
+        if (owned && ownerID!=playerId)
         {
+            //owner.GetComponent<Character>().ReleaseObject();
             stealing = true;
             StartCoroutine(stopStealing());
         }
         owned = true;
         owner = player;
         teamOwner = team;
-        ownerID = owner.GetComponent<Character>().playerId;
+        ownerID = playerId;
+        Debug.Log(ownerID);
     }
     public void releaseObject()
     {
@@ -73,9 +74,9 @@ public class Throwable : MonoBehaviour
     }
     IEnumerator stopThrowing()
     {
+        ownerID = 0;
         yield return new WaitForSeconds(1);
         throwing = false;
         teamOwner = 0;
-        ownerID = 0;
     }
 }

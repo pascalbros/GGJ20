@@ -26,11 +26,14 @@ public class DamScoreManager : MonoBehaviour
 
     public Sprite[] sprites;
     public SpriteRenderer spriteRenderer;
+
+    public TextMesh lifeText;
     private float nextLifeCheckTime = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
-        this.status = DamState.STARTED;
+        UpdateLifeText();
+        CheckTexture();
     }
 
     // Update is called once per frame
@@ -39,17 +42,23 @@ public class DamScoreManager : MonoBehaviour
         if (this.status == DamState.STARTED) {
             this.life -= this.lifeLostPerSecond * Time.deltaTime;
             this.life = Mathf.Clamp(this.life, 0.0f, 1.0f);
-            Debug.Log(percentage);
             if (this.life == 0.0f) {
                 OnDestroyed();
+                return;
             }
-        }
 
-        nextLifeCheckTime += Time.deltaTime;
-        if (nextLifeCheckTime >= 1.0f ) {
-            nextLifeCheckTime = 0.0f;
-            this.CheckTexture();
+            nextLifeCheckTime += Time.deltaTime;
+            if (nextLifeCheckTime >= 1.0f ) {
+                nextLifeCheckTime = 0.0f;
+                this.CheckTexture();            
+            }
+            UpdateLifeText();
         }
+    }
+
+    private void UpdateLifeText() {
+        if (this.lifeText == null) { return; }
+        this.lifeText.text = this.percentage;
     }
 
     //Value from 0.0 to 1.0
@@ -64,6 +73,7 @@ public class DamScoreManager : MonoBehaviour
     private void CheckTexture() {
         float value = 1.0f/this.sprites.Length;
         int index = (this.sprites.Length - 1) - (int)(this.life / value);
+        if (this.spriteRenderer.sprite == this.sprites[index]) { return; }
         this.spriteRenderer.sprite = this.sprites[index];
     }
 
