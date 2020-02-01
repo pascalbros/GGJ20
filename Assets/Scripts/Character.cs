@@ -8,7 +8,9 @@ public class Character : MonoBehaviour {
 
 	[SerializeField]
 	float moveSpeed = 2f;
-    float throwForce = 80f;
+
+    [SerializeField]
+    float throwForce = 120f;
     Animator anim;
 
     //[SerializeField]
@@ -35,8 +37,8 @@ public class Character : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		rotateAngle = 0f;
-		//anim = GetComponent<Animator> ();
-		//anim.speed = 1;
+		anim = GetComponent<Animator> ();
+		anim.speed = 1;
         state = CharacterState.Walking;
         action = CharacterAction.WaitingForAction;
 	}
@@ -53,13 +55,22 @@ public class Character : MonoBehaviour {
 
     void Move()
 	{
+        if (state == CharacterState.Walking)
+        {
+            anim.SetBool("OnGround", true);
+
+        }
+        else if (state == CharacterState.Swimming)
+        {
+            anim.SetBool("OnGround", false);
+        }
+
 		dirX = Mathf.RoundToInt(Input.GetAxis ("Horizontal"));
 		dirY = Mathf.RoundToInt(Input.GetAxis ("Vertical"));
 
 		transform.position = Vector2.Lerp(transform.position, new Vector2 (dirX  + transform.position.x, dirY  + transform.position.y), Time.deltaTime * moveSpeed);
-        
-        //if (state == CharacterState.Swimming) RotateSwim();
-        //else if(state == CharacterState.Walking) RotateWalk();
+
+        Rotate();
     }
 
     void Action() {
@@ -80,6 +91,7 @@ public class Character : MonoBehaviour {
 	{
         if (damObject != null)
         {
+            Debug.Log("aaa");
             damObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             damObject.transform.parent = this.gameObject.transform;
             action = CharacterAction.BringingObject;
@@ -97,6 +109,7 @@ public class Character : MonoBehaviour {
     IEnumerator waitForAction(float time)
     {
         yield return new WaitForSeconds(time);
+        action = CharacterAction.WaitingForAction;
     }
 
     void ReleaseObject()
@@ -120,7 +133,7 @@ public class Character : MonoBehaviour {
         }
     }
 
-    void RotateSwim()
+    void Rotate()
     {
         if (dirX == 0 && dirY == 1)
         {
@@ -186,63 +199,8 @@ public class Character : MonoBehaviour {
 
         //gun.rotation = Quaternion.Euler(0f, 0f, rotateAngle);
 
-    }void RotateWalk()
-	{
-		if (dirX == 0 && dirY == 1) {
-			rotateAngle = 0;
-			anim.speed = 1;
-			anim.SetInteger ("Direction", 1);
-		}
+    }
 
-		if (dirX == 1 && dirY == 1) {
-			rotateAngle = -45f;
-			anim.speed = 1;
-			anim.SetInteger ("Direction", 2);
-		}
-
-		if (dirX == 1 && dirY == 0) {
-			rotateAngle = -90f;
-			anim.speed = 1;
-			anim.SetInteger ("Direction", 3);
-		}
-
-		if (dirX == 1 && dirY == -1) {
-			rotateAngle = -135f;
-			anim.speed = 1;
-			anim.SetInteger ("Direction", 4);
-		}
-
-		if (dirX == 0 && dirY == -1) {
-			rotateAngle = -180f;
-			anim.speed = 1;
-			anim.SetInteger ("Direction", 5);
-		}
-
-		if (dirX == -1 && dirY == -1) {
-			rotateAngle = -225f;
-			anim.speed = 1;
-			anim.SetInteger ("Direction", 6);
-		}
-
-		if (dirX == -1 && dirY == 0) {
-			rotateAngle = -270f;
-			anim.speed = 1;
-			anim.SetInteger ("Direction", 7);
-		}
-
-		if (dirX == -1 && dirY == 1) {
-			rotateAngle = -315f;
-			anim.speed = 1;
-			anim.SetInteger ("Direction", 8);
-		}
-
-		if (dirX == 0 && dirY == 0) {
-			anim.speed = 0;
-		}
-
-		//gun.rotation = Quaternion.Euler (0f, 0f, rotateAngle);
-
-	}
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -252,6 +210,7 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8)
         {
+            Debug.Log("bbb");
             damObject = collision.gameObject;
         }
     }
