@@ -111,7 +111,7 @@ MonoBehaviour:
   throwForce: 165
   state: 0
   action: 0
-  punch: {fileID: 0}
+  punch: {fileID: 8300000, guid: 89d1bbf2db79d46b59e43bd48c150398, type: 3}
 --- !u!50 &7600278634382510326
 Rigidbody2D:
   serializedVersion: 4
