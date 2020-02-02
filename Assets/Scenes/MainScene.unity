@@ -2298,5 +2298,41 @@ PrefabInstance:
       propertyPath: pool2
       value: 
       objectReference: {fileID: 1859211585}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Defender1
+      value: 
+      objectReference: {fileID: 7155976703334608274, guid: 5afec5ae5b4e647aea0ed6abbdc08259,
+        type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Collector1
+      value: 
+      objectReference: {fileID: 8192718671162564963, guid: 3eb897e642f6944b1ae21b56bde07325,
+        type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Fighter1
+      value: 
+      objectReference: {fileID: 783861967665489182, guid: 87d22576de9dc4090a9c96d27ec3de33,
+        type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Defender2
+      value: 
+      objectReference: {fileID: 8119418732714933412, guid: 9e8211776dce64d7e937dd674aedbe25,
+        type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Collector2
+      value: 
+      objectReference: {fileID: 8326840631488388379, guid: a4757569bdea34466963ed76c266add4,
+        type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Fighter2
+      value: 
+      objectReference: {fileID: 7600278634382510322, guid: 1ec29cc99405d4f8d9db1014607c03ee,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edcb3ff480c86e74992978847f5cdd22, type: 3}

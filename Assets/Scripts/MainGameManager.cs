@@ -11,7 +11,8 @@ public enum GameState {
 
 public class MainGameManager : MonoBehaviour
 {
-    public GameObject Defender, Collector, Fighter;
+    public GameObject Defender1, Collector1, Fighter1;
+    public GameObject Defender2, Collector2, Fighter2;
     public static TeamChoice[] controllers = new TeamChoice[42];
     public DamManager dam1;
     public DamManager dam2;
@@ -97,13 +98,22 @@ public class MainGameManager : MonoBehaviour
             TeamChoiceData teamItem = teams[i];
             GameObject player=null;
             if (i <= 3) {
-                if (i%2==1) player = Instantiate(this.Fighter,positions[i], Quaternion.identity);
-                else player = Instantiate(this.Defender, positions[i], Quaternion.identity);
+                if (teamItem.team == 0) {
+                    if (i%2==1) player = Instantiate(this.Fighter1,positions[i], Quaternion.identity);
+                    else player = Instantiate(this.Defender1, positions[i], Quaternion.identity);
+                } else {
+                    if (i%2==1) player = Instantiate(this.Fighter2,positions[i], Quaternion.identity);
+                    else player = Instantiate(this.Defender2, positions[i], Quaternion.identity);
+                }
             } else {
-                player = Instantiate(this.Collector, positions[i], Quaternion.identity);
+                if (teamItem.team == 0) {
+                    player = Instantiate(this.Collector1, positions[i], Quaternion.identity);
+                } else {
+                    player = Instantiate(this.Collector2, positions[i], Quaternion.identity);
+                }
             }
 
-            player.GetComponent<SpriteRenderer>().color = teamItem.team == 0 ? Color.red : Color.cyan;
+            //player.GetComponent<SpriteRenderer>().color = teamItem.team == 0 ? Color.red : Color.cyan;
             Character character = player.GetComponent<Character>();
             character.team = teamItem.team == 0 ? 1 : 2;
             character.pool = character.team == 1 ? this.pool1 : this.pool2;
