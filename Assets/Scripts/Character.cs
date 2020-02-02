@@ -8,8 +8,15 @@ public class Character : MonoBehaviour {
     public int team=1;
     public int playerId = 1;
     bool objectHolded;
-	[SerializeField]
+    bool switchChar = true;
+    bool playAction = true;
+    public Transform pool;
+    public float speedMalus = 1.4f;
+    [SerializeField]
 	float moveSpeed = 2f;
+
+    [SerializeField]
+    GameObject stunPrefab;
 
     [SerializeField]
     float throwForce = 120f;
@@ -21,8 +28,8 @@ public class Character : MonoBehaviour {
     //Rigidbody2D bullet;
 
     Throwable damObject;
-    CharacterState state;
-    CharacterAction action;
+    public CharacterState state;
+    public CharacterAction action;
     public enum CharacterState
     {
         Swimming,
@@ -32,8 +39,7 @@ public class Character : MonoBehaviour {
     public enum CharacterAction
     {
         WaitingForAction,
-        BringingObject,
-        ActionCoolDown
+        BringingObject
     }
     
     // Use this for initialization
@@ -55,10 +61,8 @@ public class Character : MonoBehaviour {
             Move();
             Action();
         }
+        else transform.position = Vector2.Lerp(transform.position, pool.position, Time.deltaTime * moveSpeed);
 
-        Debug.Log(state);
-
-        
     }
 
     void Move()
@@ -87,13 +91,13 @@ public class Character : MonoBehaviour {
     
 
     void Action() {
-        if (action == CharacterAction.WaitingForAction)
+        if (action == CharacterAction.WaitingForAction&&playAction)
         {
-            if (Input.GetButtonDown("XButton" + playerId)) SpecialAction();
+            if (state!=CharacterState.Stunned&&Input.GetButtonDown("XButton" + playerId)) SpecialAction();
         }
         if (action == CharacterAction.BringingObject)
         {
-            if (Input.GetButtonUp("XButton" + playerId)) ThrowObject();
+            if (state != CharacterState.Stunned && Input.GetButtonUp("XButton" + playerId)) ThrowObject();
         }
     }
 
@@ -101,6 +105,7 @@ public class Character : MonoBehaviour {
 	{
         if (damObject != null && damObject.canBeGrabbed()&&objectHolded==false)
         {
+            moveSpeed /= speedMalus;
             damObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             damObject.transform.parent = this.gameObject.transform;
             action = CharacterAction.BringingObject;
@@ -112,8 +117,8 @@ public class Character : MonoBehaviour {
 
     void SpecialAction()
     {
-        action = CharacterAction.ActionCoolDown;
-        StartCoroutine(waitForAction(1f, CharacterAction.WaitingForAction));
+        playAction = false;
+        StartCoroutine(waitForAbility());
         //SpecialAbilityScript
         if (gameObject.tag.Equals("Collector"))
         {
@@ -134,7 +139,11 @@ public class Character : MonoBehaviour {
             Debug.Log("Fighter");
         }
     }
-
+    IEnumerator waitForAbility()
+    {
+        yield return new WaitForSeconds(3);
+        playAction = true;
+    }
     IEnumerator waitForAction(float time, CharacterAction newAction)
     {
         yield return new WaitForSeconds(time);
@@ -143,8 +152,17 @@ public class Character : MonoBehaviour {
     }
     IEnumerator waitForState(float time, CharacterState newState)
     {
+
+        Animator stunAnimator = stunPrefab.GetComponent<Animator>();
+        
         yield return new WaitForSeconds(time);
+        
+        if (state == CharacterState.Stunned) {
+            stunAnimator.SetBool("isStunned", false);
+        }
         state = newState;
+
+
 
     }
     public void ReleaseObject()
@@ -152,10 +170,11 @@ public class Character : MonoBehaviour {
         if (damObject != null)
         {
             damObject.transform.parent = null;
-            damObject.releaseObject();
+            //damObject.releaseObject();
             damObject = null;
             action = CharacterAction.WaitingForAction;
             objectHolded = false;
+            moveSpeed *= speedMalus;
         }
     }
 
@@ -168,6 +187,7 @@ public class Character : MonoBehaviour {
             damObject = null;
             action = CharacterAction.WaitingForAction;
             objectHolded = false;
+            moveSpeed *= speedMalus;
         }
     }
 
@@ -186,6 +206,7 @@ public class Character : MonoBehaviour {
             damObject = null;
             action = CharacterAction.WaitingForAction;
             objectHolded = false;
+            moveSpeed *= speedMalus;
         }
         else
             damObject = null;
@@ -268,9 +289,9 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8)
         {
-            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team && state!= CharacterState.Stunned)
+            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team&&state!=CharacterState.Stunned)
             {
-
+                
                 stunnPlayer();
                 
             }
@@ -285,7 +306,17 @@ public class Character : MonoBehaviour {
     {
         CharacterState newState = state;
         state = CharacterState.Stunned;
-        StartCoroutine(waitForState(1, newState));
+        stunnPrefab sp = null;
+        
+        sp = Instantiate(stunPrefab, new Vector2(transform.position.x, transform.position.y + 0.1f), Quaternion.identity).GetComponent<stunnPrefab>();
+        sp.character = this.transform;
+        Animator stunAnimator = sp.GetComponent<Animator>();
+
+        //stunPrefab.transform.parent = transform;
+        stunAnimator.SetBool("isStunned", true);
+        
+        StartCoroutine(waitForState(3, newState));
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -304,21 +335,28 @@ public class Character : MonoBehaviour {
     {
         if(collision.gameObject.GetComponent<Character>() != null)
         {
-            if(collision.gameObject.GetComponent<Character>().playerId == 0 && collision.gameObject.GetComponent<Character>().team == this.team)
+            if(switchChar && collision.gameObject.GetComponent<Character>().playerId == 0 && collision.gameObject.GetComponent<Character>().team == team)
             {
                // Debug.Log();
-                ChangeChar(collision.gameObject);
+                StartCoroutine(ChangeChar(collision.gameObject));
             }
            
         }
     }
 
-    public void ChangeChar(GameObject nextBeaver)
+    IEnumerator ChangeChar(GameObject nextBeaver)
     {
+        switchChar = false;
+        nextBeaver.GetComponent<Character>().switchChar = false;
+
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         nextBeaver.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         nextBeaver.GetComponent<Character>().playerId = playerId;
+        nextBeaver.GetComponent<Character>().action = CharacterAction.WaitingForAction;
         this.playerId = 0;
-      
+        yield return new WaitForSeconds(1);
+        switchChar = true;
+        nextBeaver.GetComponent<Character>().switchChar = true;
+
     }
 }
