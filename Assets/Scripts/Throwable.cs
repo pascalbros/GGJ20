@@ -48,7 +48,7 @@ public class Throwable : MonoBehaviour
         if (GetComponent<DamObject>()) GetComponent<DamObject>().OnObjectCollected();
         if (owned && ownerID!=playerId)
         {
-            //owner.GetComponent<Character>().ReleaseObject();
+            owner.GetComponent<Character>().ReleaseObject();
             stealing = true;
             StartCoroutine(stopStealing());
         }

@@ -11,8 +11,8 @@ public enum GameState {
 
 public class MainGameManager : MonoBehaviour
 {
-    public GameObject player;
-    public static TeamChoice[] controllers = new TeamChoice[4];
+    public GameObject Defender, Collector, Fighter;
+    public static TeamChoice[] controllers = new TeamChoice[42];
     public DamManager dam1;
     public DamManager dam2;
     public GameState status = GameState.NOT_STARTED;
@@ -89,7 +89,10 @@ public class MainGameManager : MonoBehaviour
         };
         for (int i = 0; i < teams.Count; i++) {
             TeamChoice teamItem = teams[i];
-            var player = Instantiate(this.player,positions[i], Quaternion.identity);
+            GameObject player=null;
+            if (i%2==1) player = Instantiate(this.Fighter,positions[i], Quaternion.identity);
+            else player = Instantiate(this.Defender, positions[i], Quaternion.identity);
+
             player.GetComponent<SpriteRenderer>().color = teamItem.team == 0 ? Color.red : Color.cyan;
             Character character = player.GetComponent<Character>();
             character.team = teamItem.team == 0 ? 1 : 2;
