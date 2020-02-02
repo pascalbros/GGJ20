@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 2034719709
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8142224398666478210, guid: 0a0b02d3de4bd46ceb9989e1a7efe5b2,
+  m_Sprite: {fileID: -727489026424941144, guid: 0b080c3bb50184b00b0b71da7a4d8ecb,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
-  playerId: 0
+  playerId: 1
   pool: {fileID: 0}
   speedMalus: 1.4
   moveSpeed: 1.5
@@ -183,7 +183,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8326840631488388379}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

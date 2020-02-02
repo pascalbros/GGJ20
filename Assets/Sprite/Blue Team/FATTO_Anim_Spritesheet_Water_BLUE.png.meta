@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: e3fc4ba7fdeed461ab0573ffcd39a113
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -648542880527086361
+    second: FATTO_Anim_Spritesheet_Water_BLUE_0
+  - first:
+      213: 1762029854677915365
+    second: FATTO_Anim_Spritesheet_Water_BLUE_1
+  - first:
+      213: 6273141663054400589
+    second: FATTO_Anim_Spritesheet_Water_BLUE_2
+  - first:
+      213: 3917169411860478387
+    second: FATTO_Anim_Spritesheet_Water_BLUE_3
+  - first:
+      213: 1586484529009812493
+    second: FATTO_Anim_Spritesheet_Water_BLUE_4
+  - first:
+      213: 4253577206107118841
+    second: FATTO_Anim_Spritesheet_Water_BLUE_5
+  - first:
+      213: -6756755540856203634
+    second: FATTO_Anim_Spritesheet_Water_BLUE_6
+  - first:
+      213: 343202141496216621
+    second: FATTO_Anim_Spritesheet_Water_BLUE_7
+  - first:
+      213: 2912459675774182813
+    second: FATTO_Anim_Spritesheet_Water_BLUE_8
+  - first:
+      213: 8144983806724554442
+    second: FATTO_Anim_Spritesheet_Water_BLUE_9
+  - first:
+      213: -7050669055672350582
+    second: FATTO_Anim_Spritesheet_Water_BLUE_10
+  - first:
+      213: -6866683898284974399
+    second: FATTO_Anim_Spritesheet_Water_BLUE_11
+  - first:
+      213: -9057182304114831474
+    second: FATTO_Anim_Spritesheet_Water_BLUE_12
+  - first:
+      213: -3094043671663371267
+    second: FATTO_Anim_Spritesheet_Water_BLUE_13
+  - first:
+      213: 3786743403382107382
+    second: FATTO_Anim_Spritesheet_Water_BLUE_14
+  - first:
+      213: 5199396911047910845
+    second: FATTO_Anim_Spritesheet_Water_BLUE_15
+  - first:
+      213: 6906823826530511741
+    second: FATTO_Anim_Spritesheet_Water_BLUE_16
+  - first:
+      213: -12953036469806927
+    second: FATTO_Anim_Spritesheet_Water_BLUE_17
+  - first:
+      213: -6716295811383900640
+    second: FATTO_Anim_Spritesheet_Water_BLUE_18
+  - first:
+      213: 1836289723818345055
+    second: FATTO_Anim_Spritesheet_Water_BLUE_19
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +100,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +130,441 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 177
+        width: 57
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec0390bfa9eff6f0800000000000000
+      internalID: -648542880527086361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 176
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6d5b331dcf37810800000000000000
+      internalID: 1762029854677915365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 175
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c8f042b1dae0750800000000000000
+      internalID: 6273141663054400589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 177
+        width: 55
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b938f673d49c5630800000000000000
+      internalID: 3917169411860478387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_4
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 176
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0468490643540610800000000000000
+      internalID: 1586484529009812493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 175
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc96babeedb70b30800000000000000
+      internalID: 4253577206107118841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_6
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 122
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e861d1962ae2b32a0800000000000000
+      internalID: -6756755540856203634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 122
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c0902878c43c400800000000000000
+      internalID: 343202141496216621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 122
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d956b2de4a22b6820800000000000000
+      internalID: 2912459675774182813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_9
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 122
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace30254e9bc80170800000000000000
+      internalID: 8144983806724554442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 75
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a888fc399ddf62e90800000000000000
+      internalID: -7050669055672350582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 76
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce54d13063a4b0a0800000000000000
+      internalID: -6866683898284974399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_12
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 77
+        width: 55
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f08417eac6e4280800000000000000
+      internalID: -9057182304114831474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 75
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb95fe6cafbf05d0800000000000000
+      internalID: -3094043671663371267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_14
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 76
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fce426ff073d8430800000000000000
+      internalID: 3786743403382107382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_15
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 77
+        width: 57
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5264961f7f72840800000000000000
+      internalID: 5199396911047910845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 22
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b2e822da7f9df50800000000000000
+      internalID: 6906823826530511741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 22
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8547e284bf1dff0800000000000000
+      internalID: -12953036469806927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_18
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 22
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026c4044b8ceac2a0800000000000000
+      internalID: -6716295811383900640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_Water_BLUE_19
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 22
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5284e456cfcb7910800000000000000
+      internalID: 1836289723818345055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
