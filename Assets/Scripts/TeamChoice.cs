@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class TeamChoiceData {
+    public int team;
+    public int playerId;
+    public bool confirmed;
+}
+
 public class TeamChoice : MonoBehaviour
 {
     public int team;
@@ -9,6 +15,13 @@ public class TeamChoice : MonoBehaviour
     public bool confirmed;
     public Vector2 [] position= new Vector2[3];
 
+    public TeamChoiceData GetData() {
+        TeamChoiceData data = new TeamChoiceData();
+        data.team = this.team;
+        data.playerId = this.playerId;
+        data.confirmed = this.confirmed;
+        return data;
+    }
     private float wait = 0.0f;
     // Start is called before the first frame update
     void Start()
