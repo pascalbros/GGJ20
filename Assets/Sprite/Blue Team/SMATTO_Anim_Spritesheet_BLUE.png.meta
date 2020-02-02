@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: d1ca6fd65046e4d739817c803fb30c02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3184706470681109356
+    second: SMATTO_Anim_Spritesheet_BLUE_0
+  - first:
+      213: -8031416915295910787
+    second: SMATTO_Anim_Spritesheet_BLUE_1
+  - first:
+      213: -3578093491561687291
+    second: SMATTO_Anim_Spritesheet_BLUE_2
+  - first:
+      213: 7698276450702106071
+    second: SMATTO_Anim_Spritesheet_BLUE_3
+  - first:
+      213: -4282415186252099017
+    second: SMATTO_Anim_Spritesheet_BLUE_4
+  - first:
+      213: -4411582539298346338
+    second: SMATTO_Anim_Spritesheet_BLUE_5
+  - first:
+      213: 7231451327741705366
+    second: SMATTO_Anim_Spritesheet_BLUE_6
+  - first:
+      213: -8109544060808892080
+    second: SMATTO_Anim_Spritesheet_BLUE_7
+  - first:
+      213: 4916314898404522442
+    second: SMATTO_Anim_Spritesheet_BLUE_8
+  - first:
+      213: -6861269594087084627
+    second: SMATTO_Anim_Spritesheet_BLUE_9
+  - first:
+      213: -6012504040053466749
+    second: SMATTO_Anim_Spritesheet_BLUE_10
+  - first:
+      213: 7853102151767136086
+    second: SMATTO_Anim_Spritesheet_BLUE_11
+  - first:
+      213: 7155356943852742594
+    second: SMATTO_Anim_Spritesheet_BLUE_12
+  - first:
+      213: 5245106483056376519
+    second: SMATTO_Anim_Spritesheet_BLUE_13
+  - first:
+      213: -2450193724478806743
+    second: SMATTO_Anim_Spritesheet_BLUE_14
+  - first:
+      213: 4822510725718409350
+    second: SMATTO_Anim_Spritesheet_BLUE_15
+  - first:
+      213: -4759984995256556405
+    second: SMATTO_Anim_Spritesheet_BLUE_16
+  - first:
+      213: -8754742454801403930
+    second: SMATTO_Anim_Spritesheet_BLUE_17
+  - first:
+      213: 6883556992346159459
+    second: SMATTO_Anim_Spritesheet_BLUE_18
+  - first:
+      213: 7651521159793839722
+    second: SMATTO_Anim_Spritesheet_BLUE_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 190
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c1a259656adc3d0800000000000000
+      internalID: -3184706470681109356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 190
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7449b82edcaa8090800000000000000
+      internalID: -8031416915295910787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 190
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507145e4dee085ec0800000000000000
+      internalID: -3578093491561687291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 190
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd9ada05a5c5da60800000000000000
+      internalID: 7698276450702106071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_4
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 190
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73294bac31ec194c0800000000000000
+      internalID: -4282415186252099017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a6ec7dd09e6c2c0800000000000000
+      internalID: -4411582539298346338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 133
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c32903ba64b5460800000000000000
+      internalID: 7231451327741705366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 132
+        width: 43
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0517b1594ac157f80800000000000000
+      internalID: -8109544060808892080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 133
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9bc533a524a3440800000000000000
+      internalID: 4916314898404522442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 133
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad204028afd7c0a0800000000000000
+      internalID: -6861269594087084627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 79
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38913026e6b4f8ca0800000000000000
+      internalID: -6012504040053466749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 77
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6579fecacc2dbfc60800000000000000
+      internalID: 7853102151767136086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_12
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 77
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7a77fca3fec4360800000000000000
+      internalID: 7155356943852742594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 77
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca7cab7e8c5ac840800000000000000
+      internalID: 5245106483056376519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 77
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925ac8d0ac92ffdd0800000000000000
+      internalID: -2450193724478806743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_15
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 77
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68005fb44fffce240800000000000000
+      internalID: 4822510725718409350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 20
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b842b85cdd221fdb0800000000000000
+      internalID: -4759984995256556405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 20
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efe7893f18e08680800000000000000
+      internalID: -8754742454801403930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_18
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 19
+        width: 43
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369f2f72d9e478f50800000000000000
+      internalID: 6883556992346159459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SMATTO_Anim_Spritesheet_BLUE_19
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 20
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e85e094f9af2a60800000000000000
+      internalID: 7651521159793839722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

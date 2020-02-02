@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 37ae2314802a44abe8a990df544be22b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2301589273100974234
+    second: CHIATTO_SpriteSheet_Water_BLUE_0
+  - first:
+      213: 5631794431968601825
+    second: CHIATTO_SpriteSheet_Water_BLUE_1
+  - first:
+      213: 787232456231881977
+    second: CHIATTO_SpriteSheet_Water_BLUE_2
+  - first:
+      213: 8251403959313796364
+    second: CHIATTO_SpriteSheet_Water_BLUE_3
+  - first:
+      213: -3708151481434526808
+    second: CHIATTO_SpriteSheet_Water_BLUE_4
+  - first:
+      213: -1900070930804598175
+    second: CHIATTO_SpriteSheet_Water_BLUE_5
+  - first:
+      213: -6008050008709110699
+    second: CHIATTO_SpriteSheet_Water_BLUE_6
+  - first:
+      213: -5764955194254755642
+    second: CHIATTO_SpriteSheet_Water_BLUE_7
+  - first:
+      213: -1738193276386242152
+    second: CHIATTO_SpriteSheet_Water_BLUE_8
+  - first:
+      213: 6279167509728333028
+    second: CHIATTO_SpriteSheet_Water_BLUE_9
+  - first:
+      213: -3516914374362125202
+    second: CHIATTO_SpriteSheet_Water_BLUE_10
+  - first:
+      213: -5300211404881327986
+    second: CHIATTO_SpriteSheet_Water_BLUE_11
+  - first:
+      213: -4480919685569463620
+    second: CHIATTO_SpriteSheet_Water_BLUE_12
+  - first:
+      213: 4326415462757422897
+    second: CHIATTO_SpriteSheet_Water_BLUE_13
+  - first:
+      213: -2182842586664775622
+    second: CHIATTO_SpriteSheet_Water_BLUE_14
+  - first:
+      213: -2071500990003079072
+    second: CHIATTO_SpriteSheet_Water_BLUE_15
+  - first:
+      213: 1448951051424980441
+    second: CHIATTO_SpriteSheet_Water_BLUE_16
+  - first:
+      213: 3960842294692010329
+    second: CHIATTO_SpriteSheet_Water_BLUE_17
+  - first:
+      213: -4426930644935051581
+    second: CHIATTO_SpriteSheet_Water_BLUE_18
+  - first:
+      213: -2178592995731536488
+    second: CHIATTO_SpriteSheet_Water_BLUE_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 176
+        width: 69
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a987802ef33e0ff10800000000000000
+      internalID: 2301589273100974234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 170
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6e2858237282e40800000000000000
+      internalID: 5631794431968601825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 173
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc0c5d7fbfccea00800000000000000
+      internalID: 787232456231881977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 176
+        width: 69
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d8625ee20e28270800000000000000
+      internalID: 8251403959313796364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_4
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 170
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aba1cfcfdff98cc0800000000000000
+      internalID: -3708151481434526808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 173
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a98513e8791a5e0800000000000000
+      internalID: -1900070930804598175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 118
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5546c1e595e1f9ca0800000000000000
+      internalID: -6008050008709110699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 119
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8f66c7bc3ceffa0800000000000000
+      internalID: -5764955194254755642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_8
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 118
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891960aac62b0e7e0800000000000000
+      internalID: -1738193276386242152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 119
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec0886e495142750800000000000000
+      internalID: 6279167509728333028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 66
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c2eaa8209613fc0800000000000000
+      internalID: -3516914374362125202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 63
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8803991fcdd176b0800000000000000
+      internalID: -5300211404881327986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 69
+        width: 69
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbab392794390d1c0800000000000000
+      internalID: -4480919685569463620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 66
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137d968e0f38a0c30800000000000000
+      internalID: 4326415462757422897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_14
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 63
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30504d8b3cf4b1e0800000000000000
+      internalID: -2182842586664775622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 69
+        width: 69
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0681ffa23dc8043e0800000000000000
+      internalID: -2071500990003079072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 12
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd5d1ded45bb1410800000000000000
+      internalID: 1448951051424980441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_17
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 11
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959d572e41db7f630800000000000000
+      internalID: 3960842294692010329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_18
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 12
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6fa5788026092c0800000000000000
+      internalID: -4426930644935051581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_Water_BLUE_19
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 11
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895844b863514c1e0800000000000000
+      internalID: -2178592995731536488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

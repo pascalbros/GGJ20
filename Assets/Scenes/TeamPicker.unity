@@ -252,7 +252,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c7fcb6f4af61b4cc9b3e56476e8d9539, type: 3}
-  m_Color: {r: 1, g: 0.2839629, b: 0.2688679, a: 1}
+  m_Color: {r: 1, g: 0.47843137, b: 0.27450982, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -317,9 +317,9 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378401374}
-  m_Text: Red Team
+  m_Text: Orange Team
   m_OffsetZ: 0
-  m_CharacterSize: 18
+  m_CharacterSize: 14
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
@@ -609,7 +609,7 @@ TextMesh:
   m_GameObject: {fileID: 1415997107}
   m_Text: Blue Team
   m_OffsetZ: 0
-  m_CharacterSize: 18
+  m_CharacterSize: 14
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
