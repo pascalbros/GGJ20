@@ -227,6 +227,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-4898471926962734978
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Special
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -4247933374925825879}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.6
+  m_TransitionOffset: 0
+  m_ExitTime: 0.0000000014641356
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &-4446407893724102454
 AnimatorState:
   serializedVersion: 5
@@ -281,6 +306,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
+--- !u!1102 &-4247933374925825879
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Special
+  m_Speed: 0.52
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 3e382d426695d41cd9e2bebaac1ca1ea, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &-4225132581133729270
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -549,6 +600,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: Special
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: CharacterState
@@ -679,55 +736,58 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4446407893724102454}
-    m_Position: {x: 2250, y: 670, z: 0}
+    m_Position: {x: 2850, y: 700, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7388934230525591446}
-    m_Position: {x: 2520, y: 890, z: 0}
+    m_Position: {x: 3120, y: 920, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3435198133875198902}
-    m_Position: {x: 2520, y: 970, z: 0}
+    m_Position: {x: 3120, y: 1000, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7359028401764669729}
-    m_Position: {x: 2180, y: 1050, z: 0}
+    m_Position: {x: 2780, y: 1080, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1479870983855893352}
-    m_Position: {x: 2520, y: 1060, z: 0}
+    m_Position: {x: 3120, y: 1090, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7414693455148133732}
-    m_Position: {x: 1790, y: 960, z: 0}
+    m_Position: {x: 2390, y: 990, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 718647192912373673}
-    m_Position: {x: 1790, y: 880, z: 0}
+    m_Position: {x: 2390, y: 910, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7106440056924386809}
-    m_Position: {x: 1790, y: 1040, z: 0}
+    m_Position: {x: 2390, y: 1070, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1539427735816654348}
-    m_Position: {x: 2120, y: 570, z: 0}
+    m_Position: {x: 2720, y: 600, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5343085028123934301}
-    m_Position: {x: 2520, y: 570, z: 0}
+    m_Position: {x: 3120, y: 600, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1514624422952916191}
-    m_Position: {x: 1780, y: 740, z: 0}
+    m_Position: {x: 2380, y: 770, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8540612978133263470}
-    m_Position: {x: 1780, y: 580, z: 0}
+    m_Position: {x: 2380, y: 610, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5372160463044891526}
-    m_Position: {x: 1780, y: 660, z: 0}
+    m_Position: {x: 2380, y: 690, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4750034092015204114}
-    m_Position: {x: 2520, y: 650, z: 0}
+    m_Position: {x: 3120, y: 680, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1342251057341288534}
-    m_Position: {x: 2520, y: 740, z: 0}
+    m_Position: {x: 3120, y: 770, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2926858066725170431}
-    m_Position: {x: 2250, y: 960, z: 0}
+    m_Position: {x: 2850, y: 990, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5709040340470991614}
-    m_Position: {x: 1580, y: 250, z: 0}
+    m_Position: {x: 2180, y: 280, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -4247933374925825879}
+    m_Position: {x: 2360, y: 1490, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -6171625380504513336}
@@ -747,12 +807,13 @@ AnimatorStateMachine:
   - {fileID: -8177630655802173793}
   - {fileID: -3130097463786081060}
   - {fileID: -1261826816373252947}
+  - {fileID: -4898471926962734978}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 2220, y: 780, z: 0}
-  m_EntryPosition: {x: 2030, y: -340, z: 0}
-  m_ExitPosition: {x: 3100, y: 80, z: 0}
+  m_AnyStatePosition: {x: 2820, y: 810, z: 0}
+  m_EntryPosition: {x: 2630, y: -310, z: 0}
+  m_ExitPosition: {x: 3700, y: 110, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 5709040340470991614}
 --- !u!1101 &3032094848531641941

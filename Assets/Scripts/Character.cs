@@ -146,6 +146,7 @@ public class Character : MonoBehaviour {
     }
     IEnumerator waitForState(float time, CharacterState newState)
     {
+
         Animator stunAnimator = stunPrefab.GetComponent<Animator>();
         
         yield return new WaitForSeconds(time);
@@ -155,8 +156,7 @@ public class Character : MonoBehaviour {
         }
         state = newState;
 
-        
-        //Destroy(stunPrefab);
+
 
     }
     public void ReleaseObject()
