@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class FightClass : MonoBehaviour
 {
+
+
     Character[] positions = new Character[3];
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
+
         int counter = 0;
         foreach (Character c in FindObjectsOfType<Character>())
         {
@@ -24,6 +29,8 @@ public class FightClass : MonoBehaviour
     {
         foreach (Character c in positions)
         {
+            Debug.Log("special");
+            anim.SetTrigger("Special");
             if (c != GetComponent<Character>() && Vector3.Distance(c.transform.position, transform.position) < 1) c.stunnPlayer();
         }
     }

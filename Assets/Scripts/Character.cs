@@ -148,6 +148,7 @@ public class Character : MonoBehaviour {
     }
     IEnumerator waitForState(float time, CharacterState newState)
     {
+        Debug.Log("printone");
         Instantiate(stunPrefab, new Vector2(transform.position.x, transform.position.y + 10), Quaternion.identity);
         stunPrefab.transform.parent = transform;
         Animator stunAnimator = stunPrefab.GetComponent<Animator>();
@@ -157,7 +158,7 @@ public class Character : MonoBehaviour {
         state = newState;
 
         stunAnimator.SetBool("isStunned", false);
-        Destroy(stunPrefab);
+  
 
     }
     public void ReleaseObject()
