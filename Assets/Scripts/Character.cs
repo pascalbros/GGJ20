@@ -26,8 +26,8 @@ public class Character : MonoBehaviour {
     //Rigidbody2D bullet;
 
     Throwable damObject;
-    CharacterState state;
-    CharacterAction action;
+    public CharacterState state;
+    public CharacterAction action;
     public enum CharacterState
     {
         Swimming,
@@ -148,8 +148,9 @@ public class Character : MonoBehaviour {
     }
     IEnumerator waitForState(float time, CharacterState newState)
     {
-        Instantiate(stunPrefab, new Vector2(transform.position.x, transform.position.y + 10), Quaternion.identity);
-        stunPrefab.transform.parent = transform;
+        Debug.Log("uauaua");
+        Instantiate(stunPrefab, new Vector2(transform.position.x, transform.position.y+1), Quaternion.identity);
+        //stunPrefab.transform.parent = transform;
         Animator stunAnimator = stunPrefab.GetComponent<Animator>();
         stunAnimator.SetBool("isStunned", true);
 
@@ -157,7 +158,7 @@ public class Character : MonoBehaviour {
         state = newState;
 
         stunAnimator.SetBool("isStunned", false);
-        Destroy(stunPrefab);
+        //Destroy(stunPrefab);
 
     }
     public void ReleaseObject()
