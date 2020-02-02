@@ -110,7 +110,7 @@ MonoBehaviour:
   throwForce: 250
   state: 0
   action: 0
-  punch: {fileID: 0}
+  punch: {fileID: 8300000, guid: 89d1bbf2db79d46b59e43bd48c150398, type: 3}
 --- !u!95 &8119418732714933408
 Animator:
   serializedVersion: 3

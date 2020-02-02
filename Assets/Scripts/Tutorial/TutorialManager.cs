@@ -3,24 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TeamPickerManager : MonoBehaviour
+public class TutorialManager : MonoBehaviour
 {
-    public TeamChoice[] controllers;
+    public string sceneName = "MainScene";
     // Start is called before the first frame update
     void Start()
     {
-        MainGameManager.controllers = this.controllers;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void FixedUpdate() {
-        if (MainGameManager.allApproved()) {
-            SceneManager.LoadScene("Tutorial");
+        if(Input.anyKey) {
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }
     }
 }
