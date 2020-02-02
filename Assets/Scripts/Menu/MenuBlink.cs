@@ -16,7 +16,7 @@ public class MenuBlink : MonoBehaviour
     {
         GetComponent<MeshRenderer>().enabled = Time.fixedTime%1.0f<.5;
         if(Input.anyKey) {
-            SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+            SceneManager.LoadScene("TeamPicker", LoadSceneMode.Single);
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<MeshRenderer>().enabled = true;
         }
