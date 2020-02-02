@@ -30,6 +30,7 @@ public class Character : MonoBehaviour {
     Throwable damObject;
     public CharacterState state;
     public CharacterAction action;
+    public AudioClip punch;
     public enum CharacterState
     {
         Swimming,
@@ -316,7 +317,7 @@ public class Character : MonoBehaviour {
 
         //stunPrefab.transform.parent = transform;
         stunAnimator.SetBool("isStunned", true);
-        
+        this.GetComponent<AudioSource>().PlayOneShot(this.punch, 1.0f);
         StartCoroutine(waitForState(3, newState));
 
     }
@@ -352,8 +353,8 @@ public class Character : MonoBehaviour {
         switchChar = false;
         nextBeaver.GetComponent<Character>().switchChar = false;
 
-        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        nextBeaver.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        nextBeaver.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         nextBeaver.GetComponent<Character>().playerId = playerId;
         nextBeaver.GetComponent<Character>().action = CharacterAction.WaitingForAction;
         this.playerId = 0;

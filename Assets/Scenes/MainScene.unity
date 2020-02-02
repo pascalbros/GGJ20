@@ -461,7 +461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508676622}
   - component: {fileID: 508676623}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: DamBounds1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,10 +492,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -506,7 +506,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.47, y: 2.42}
+  m_Size: {x: 0.99, y: 1.27}
   m_EdgeRadius: 0
 --- !u!1 &923295293
 GameObject:
@@ -1376,7 +1376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1850389308}
   - component: {fileID: 1850389309}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: DamBounds2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1407,10 +1407,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1421,7 +1421,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.47, y: 2.42}
+  m_Size: {x: 0.99, y: 1.27}
   m_EdgeRadius: 0
 --- !u!1001 &1859211581
 PrefabInstance:
@@ -1804,6 +1804,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1859211585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7338496960138240562, guid: 80754938d2b9a405cafb526314918e16,
+    type: 3}
+  m_PrefabInstance: {fileID: 1859211581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &764733427089127568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2175,6 +2181,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &764733427089127572 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7338496960138240562, guid: 80754938d2b9a405cafb526314918e16,
+    type: 3}
+  m_PrefabInstance: {fileID: 764733427089127568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6482705091100733550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2276,5 +2288,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7669673730795487768, guid: efbc0012ec87f4eef994c8fd08683fad,
         type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: pool1
+      value: 
+      objectReference: {fileID: 764733427089127572}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: pool2
+      value: 
+      objectReference: {fileID: 1859211585}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edcb3ff480c86e74992978847f5cdd22, type: 3}

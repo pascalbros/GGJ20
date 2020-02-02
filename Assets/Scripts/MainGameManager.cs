@@ -15,6 +15,8 @@ public class MainGameManager : MonoBehaviour
     public static TeamChoice[] controllers = new TeamChoice[42];
     public DamManager dam1;
     public DamManager dam2;
+    public Transform pool1;
+    public Transform pool2;
     public GameState status = GameState.NOT_STARTED;
 
     public static MainGameManager current;
@@ -81,23 +83,40 @@ public class MainGameManager : MonoBehaviour
         List<TeamChoice> teams = new List<TeamChoice>();
         teams.AddRange(team2);
         teams.AddRange(team1);
+        teams.Add(SwappingTeamMate(2));
+        teams.Add(SwappingTeamMate(0));
         Vector3[] positions = new Vector3[] {
             position,
             new Vector3(position.x, -position.y, position.z),
             new Vector3(-position.x, position.y, position.z),
-            new Vector3(-position.x, -position.y, position.z)
+            new Vector3(-position.x, -position.y, position.z),
+            new Vector3(4.88f, -0.18f, position.z), //swap2
+            new Vector3(-4.88f, -0.18f, position.z) //swap1
         };
         for (int i = 0; i < teams.Count; i++) {
             TeamChoice teamItem = teams[i];
             GameObject player=null;
-            if (i%2==1) player = Instantiate(this.Fighter,positions[i], Quaternion.identity);
-            else player = Instantiate(this.Defender, positions[i], Quaternion.identity);
+            if (i <= 3) {
+                if (i%2==1) player = Instantiate(this.Fighter,positions[i], Quaternion.identity);
+                else player = Instantiate(this.Defender, positions[i], Quaternion.identity);
+            } else {
+                player = Instantiate(this.Collector, positions[i], Quaternion.identity);
+            }
 
             player.GetComponent<SpriteRenderer>().color = teamItem.team == 0 ? Color.red : Color.cyan;
             Character character = player.GetComponent<Character>();
             character.team = teamItem.team == 0 ? 1 : 2;
+            character.pool = character.team == 1 ? this.pool1 : this.pool2;
             character.playerId = teamItem.playerId;
         }
+    }
+
+    private TeamChoice SwappingTeamMate(int teamId) {
+        TeamChoice teamMate = new TeamChoice();
+        teamMate.playerId = 0;
+        teamMate.team = teamId;
+        teamMate.confirmed = true;
+        return teamMate;
     }
 
     void SetupObjectsSpawner() {
@@ -111,14 +130,12 @@ public class MainGameManager : MonoBehaviour
 
     void OnDam1Destroyed() {
         this.dam2.scoreManager.status = DamState.WINNER;
-        Debug.Log("Dam 1 destroyed");
         EndManager.winnerTeamIndex = 2;
         this.OnGameEnd();
     }
 
     void OnDam2Destroyed() {
         this.dam1.scoreManager.status = DamState.WINNER;
-        Debug.Log("Dam 2 destroyed");
         EndManager.winnerTeamIndex = 1;
         this.OnGameEnd();
     }
