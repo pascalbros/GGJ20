@@ -31,7 +31,6 @@ public class ObjectsSpawner : MonoBehaviour
     }
 
     void JustSpawnStuff() {
-        Debug.Log("Spawned!");
         float x = Random.Range(-this.spawnWidthRange, this.spawnWidthRange);
         GameObject collectable = this.collectables[Random.Range(0,this.collectables.Length)];
         Instantiate(collectable, new Vector3(x, this.transform.position.y, 0), Quaternion.identity);

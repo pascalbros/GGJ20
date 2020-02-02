@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 0a0b02d3de4bd46ceb9989e1a7efe5b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8142224398666478210
+    second: FATTO_Anim_Spritesheet_0
+  - first:
+      213: -6280174107884162069
+    second: FATTO_Anim_Spritesheet_1
+  - first:
+      213: 2143148806985515610
+    second: FATTO_Anim_Spritesheet_2
+  - first:
+      213: 4708987573177147766
+    second: FATTO_Anim_Spritesheet_3
+  - first:
+      213: 8517235161995677968
+    second: FATTO_Anim_Spritesheet_4
+  - first:
+      213: -1314032196492018829
+    second: FATTO_Anim_Spritesheet_5
+  - first:
+      213: -2472164675384654907
+    second: FATTO_Anim_Spritesheet_6
+  - first:
+      213: -7655363467304165101
+    second: FATTO_Anim_Spritesheet_7
+  - first:
+      213: 8288943154053505988
+    second: FATTO_Anim_Spritesheet_8
+  - first:
+      213: 1204784915714958516
+    second: FATTO_Anim_Spritesheet_9
+  - first:
+      213: 3807535498277488639
+    second: FATTO_Anim_Spritesheet_10
+  - first:
+      213: -5764995373826315557
+    second: FATTO_Anim_Spritesheet_11
+  - first:
+      213: 3893164966620033312
+    second: FATTO_Anim_Spritesheet_12
+  - first:
+      213: 5788780089763383634
+    second: FATTO_Anim_Spritesheet_13
+  - first:
+      213: 7937982795332626292
+    second: FATTO_Anim_Spritesheet_14
+  - first:
+      213: -4728370522937923517
+    second: FATTO_Anim_Spritesheet_15
+  - first:
+      213: -6856098207654172840
+    second: FATTO_Anim_Spritesheet_16
+  - first:
+      213: -1888785945012969822
+    second: FATTO_Anim_Spritesheet_17
+  - first:
+      213: 3319621042498831742
+    second: FATTO_Anim_Spritesheet_18
+  - first:
+      213: 7863531063678682435
+    second: FATTO_Anim_Spritesheet_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 184
+        width: 57
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282b80483fdfef070800000000000000
+      internalID: 8142224398666478210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 184
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be375f33ce658d8a0800000000000000
+      internalID: -6280174107884162069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 184
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a528c2d2c7efdbd10800000000000000
+      internalID: 2143148806985515610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 184
+        width: 55
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671e3fe9f3fa95140800000000000000
+      internalID: 4708987573177147766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 184
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011183be04c433670800000000000000
+      internalID: 8517235161995677968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 185
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bbaa8edae93cde0800000000000000
+      internalID: -1314032196492018829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 126
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3cd69635b11bdd0800000000000000
+      internalID: -2472164675384654907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 126
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31125d08c7fa2c590800000000000000
+      internalID: -7655363467304165101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 126
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3e3c4c1ed380370800000000000000
+      internalID: 8288943154053505988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 126
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b460f36f7148b010800000000000000
+      internalID: 1204784915714958516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 69
+        width: 57
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7058ccc5517d430800000000000000
+      internalID: 3807535498277488639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 69
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaef43704f9effa0800000000000000
+      internalID: -5764995373826315557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 69
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021f16709ec470630800000000000000
+      internalID: 3893164966620033312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 69
+        width: 55
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259433542d0e55050800000000000000
+      internalID: 5788780089763383634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 69
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477a6fc8b41692e60800000000000000
+      internalID: 7937982795332626292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 70
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3486bd5bf04716eb0800000000000000
+      internalID: -4728370522937923517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 11
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857a49b510f3ad0a0800000000000000
+      internalID: -6856098207654172840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 11
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae50c2b03fa9c5e0800000000000000
+      internalID: -1888785945012969822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 11
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e750e0300c9a11e20800000000000000
+      internalID: 3319621042498831742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FATTO_Anim_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 11
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34541d2f6dfd02d60800000000000000
+      internalID: 7863531063678682435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

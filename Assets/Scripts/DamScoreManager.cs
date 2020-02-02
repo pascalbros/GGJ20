@@ -32,7 +32,8 @@ public class DamScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.status = DamState.STARTED;
+        UpdateLifeText();
+        CheckTexture();
     }
 
     // Update is called once per frame
