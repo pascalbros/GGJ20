@@ -6,7 +6,7 @@ using UnityEngine;
 public class DashClass : MonoBehaviour
 {
     [SerializeField]
-    float dashForce = 3f;
+    public float dashForce = 15f;
 
     Rigidbody2D rb; 
 
@@ -26,19 +26,8 @@ public class DashClass : MonoBehaviour
     public void Dash(float dirX, float dirY)
     {
 
-        RaycastHit2D collision = Physics2D.Raycast(transform.position, new Vector2(dirX, dirY), dashForce, 9);
-        Debug.DrawRay(transform.position, new Vector2(transform.position.x*dirX*dashForce, transform.position.y * dirY * dashForce), Color.red, 300f);
-
-
-        if(collision.collider == null)
-        {
-            transform.position = new Vector2(transform.position.x + dirX * dashForce, transform.position.y + dirY * dashForce);
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(dirX, dirY)*dashForce, ForceMode2D.Impulse);
         
-        }
-        else
-        {
-            Debug.Log("MURO");
-        }
 
     }
 }

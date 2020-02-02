@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class DefendClass : MonoBehaviour
 {
-    Character[] positions = new Character[3];
+    Character[] positions = new Character[2];
+    Animator anim;
+    public float force=280f;
     // Start is called before the first frame update
     void Start()
     {
+        //anim = GetComponent<Animator>();
+
         int counter = 0;
+
         foreach (Character c in FindObjectsOfType<Character>())
         {
-            if (c != GetComponent<Character>() && c.team != GetComponent<Character>().team) positions[counter] = c;
+            if (c.team != GetComponent<Character>().team)
+            {
+                positions[counter] = c;
+                counter++;
+            }
         }
     }
 
@@ -22,9 +31,19 @@ public class DefendClass : MonoBehaviour
     }
     public void Defend()
     {
-        foreach(Character c in positions)
+        
+        foreach (Character c in positions)
         {
-            if (Vector3.Distance(c.transform.position, transform.position) < 1.5f) c.stunnPlayer();
+
+            Debug.Log("special");
+            //anim.SetTrigger("Special");
+            Debug.Log("uaaaaaaaaaaaaa");
+
+            if ((c.transform.position - transform.position).magnitude < 1.4f)
+            {
+                c.GetComponent<Rigidbody2D>().AddForce((c.transform.position - transform.position).normalized * force);
+            }
+
         }
     }
 }
