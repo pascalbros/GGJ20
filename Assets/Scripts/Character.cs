@@ -14,6 +14,9 @@ public class Character : MonoBehaviour {
 	float moveSpeed = 2f;
 
     [SerializeField]
+    GameObject stunPrefab;
+
+    [SerializeField]
     float throwForce = 120f;
     Animator anim;
     
@@ -57,7 +60,6 @@ public class Character : MonoBehaviour {
             Move();
             Action();
         }
-        
         Debug.Log(state);
 
         
@@ -146,8 +148,16 @@ public class Character : MonoBehaviour {
     }
     IEnumerator waitForState(float time, CharacterState newState)
     {
+        Instantiate(stunPrefab, new Vector2(transform.position.x, transform.position.y + 10), Quaternion.identity);
+        stunPrefab.transform.parent = transform;
+        Animator stunAnimator = stunPrefab.GetComponent<Animator>();
+        stunAnimator.SetBool("isStunned", true);
+
         yield return new WaitForSeconds(time);
         state = newState;
+
+        stunAnimator.SetBool("isStunned", false);
+        Destroy(stunPrefab);
 
     }
     public void ReleaseObject()
@@ -292,6 +302,7 @@ public class Character : MonoBehaviour {
         CharacterState newState = state;
         state = CharacterState.Stunned;
         StartCoroutine(waitForState(3, newState));
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -323,9 +334,11 @@ public class Character : MonoBehaviour {
     {
         switchChar = false;
         nextBeaver.GetComponent<Character>().switchChar = false;
+
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         nextBeaver.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         nextBeaver.GetComponent<Character>().playerId = playerId;
+        nextBeaver.GetComponent<Character>().action = CharacterAction.WaitingForAction;
         this.playerId = 0;
         yield return new WaitForSeconds(1);
         switchChar = true;
