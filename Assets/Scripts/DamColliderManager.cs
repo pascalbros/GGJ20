@@ -45,7 +45,7 @@ public class DamColliderManager : MonoBehaviour
     private void OnTeamMateEntered(Character teamMate) {
         bool hasObject = teamMate.hasObject();
         if (hasObject) { //if team mate has got an object
-            scoreManager.AddLife(0.05f);
+            scoreManager.AddLife(0.05f+Random.Range(-0.02f, 0.02f));
             teamMate.DestroyObject();
             this.GetComponent<AudioSource>().PlayOneShot(this.onDamLifeUp, 1.0f);
         }
@@ -54,7 +54,7 @@ public class DamColliderManager : MonoBehaviour
     private void OnEnemyEntered(Character enemy) {
         bool hasObject = enemy.hasObject();
         if (hasObject) { return; }
-        scoreManager.AddLife(-0.05f);
+        scoreManager.AddLife(-0.02f+Random.Range(-0.01f, -0.03f));
         Instantiate(this.throwables[Random.Range(0, throwables.Length)], enemy.transform.position, Quaternion.identity);
         //player get an object
     }
