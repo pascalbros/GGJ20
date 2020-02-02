@@ -10,7 +10,7 @@ public class DefendClass : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
         int counter = 0;
 
@@ -36,7 +36,7 @@ public class DefendClass : MonoBehaviour
         {
 
             Debug.Log("special");
-            //anim.SetTrigger("Special");
+            anim.SetTrigger("Special");
             Debug.Log("uaaaaaaaaaaaaa");
 
             if ((c.transform.position - transform.position).magnitude < 1.4f)

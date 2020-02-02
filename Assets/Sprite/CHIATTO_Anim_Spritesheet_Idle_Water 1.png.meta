@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 09d79806ada7448a189e3b2aba09812a
+guid: 4d90cb747bc61c7479f3e3c328b64e0a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8800339947041148590
-    second: CHIATTO_Anim_Spritesheet_Idle_Water_0
+      213: -2068906883477977443
+    second: CHIATTO_Anim_Spritesheet_Idle_Water 1_0
   - first:
-      213: 5958790873703971302
-    second: CHIATTO_Anim_Spritesheet_Idle_Water_1
+      213: 7881554143831169366
+    second: CHIATTO_Anim_Spritesheet_Idle_Water 1_1
   - first:
-      213: 1327656580202774521
-    second: CHIATTO_Anim_Spritesheet_Idle_Water_2
+      213: 1047392682358974736
+    second: CHIATTO_Anim_Spritesheet_Idle_Water 1_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,7 +95,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CHIATTO_Anim_Spritesheet_Idle_Water_0
+      name: CHIATTO_Anim_Spritesheet_Idle_Water 1_0
       rect:
         serializedVersion: 2
         x: 4
@@ -109,14 +109,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eae411e3e86112a70800000000000000
-      internalID: 8800339947041148590
+      spriteID: d964fe8a624c943e0800000000000000
+      internalID: -2068906883477977443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHIATTO_Anim_Spritesheet_Idle_Water_1
+      name: CHIATTO_Anim_Spritesheet_Idle_Water 1_1
       rect:
         serializedVersion: 2
         x: 50
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e9f6f58ab0e1b250800000000000000
-      internalID: 5958790873703971302
+      spriteID: 659901d4cb7e06d60800000000000000
+      internalID: 7881554143831169366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHIATTO_Anim_Spritesheet_Idle_Water_2
+      name: CHIATTO_Anim_Spritesheet_Idle_Water 1_2
       rect:
         serializedVersion: 2
         x: 96
@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ff32be10a8cc6210800000000000000
-      internalID: 1327656580202774521
+      spriteID: 019a9546816198e00800000000000000
+      internalID: 1047392682358974736
       vertices: []
       indices: 
       edges: []
