@@ -9,6 +9,8 @@ public class Character : MonoBehaviour {
     public int playerId = 1;
     bool objectHolded;
     bool switchChar = true;
+    bool playAction = true;
+    public Transform pool;
     public float speedMalus = 1.4f;
     [SerializeField]
 	float moveSpeed = 2f;
@@ -37,8 +39,7 @@ public class Character : MonoBehaviour {
     public enum CharacterAction
     {
         WaitingForAction,
-        BringingObject,
-        ActionCoolDown
+        BringingObject
     }
     
     // Use this for initialization
@@ -60,7 +61,8 @@ public class Character : MonoBehaviour {
             Move();
             Action();
         }
-        
+        else transform.position = Vector2.Lerp(transform.position, pool.position, Time.deltaTime * moveSpeed);
+
     }
 
     void Move()
@@ -89,7 +91,7 @@ public class Character : MonoBehaviour {
     
 
     void Action() {
-        if (action == CharacterAction.WaitingForAction)
+        if (action == CharacterAction.WaitingForAction&&playAction)
         {
             if (state!=CharacterState.Stunned&&Input.GetButtonDown("XButton" + playerId)) SpecialAction();
         }
@@ -115,8 +117,8 @@ public class Character : MonoBehaviour {
 
     void SpecialAction()
     {
-        action = CharacterAction.ActionCoolDown;
-        StartCoroutine(waitForAction(5f, CharacterAction.WaitingForAction));
+        playAction = false;
+        StartCoroutine(waitForAbility());
         //SpecialAbilityScript
         if (gameObject.tag.Equals("Collector"))
         {
@@ -137,7 +139,11 @@ public class Character : MonoBehaviour {
             Debug.Log("Fighter");
         }
     }
-
+    IEnumerator waitForAbility()
+    {
+        yield return new WaitForSeconds(3);
+        playAction = true;
+    }
     IEnumerator waitForAction(float time, CharacterAction newAction)
     {
         yield return new WaitForSeconds(time);
@@ -164,7 +170,7 @@ public class Character : MonoBehaviour {
         if (damObject != null)
         {
             damObject.transform.parent = null;
-            damObject.releaseObject();
+            //damObject.releaseObject();
             damObject = null;
             action = CharacterAction.WaitingForAction;
             objectHolded = false;
@@ -283,9 +289,9 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8)
         {
-            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team)
+            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team&&state!=CharacterState.Stunned)
             {
-
+                
                 stunnPlayer();
                 
             }

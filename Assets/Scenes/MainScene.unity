@@ -2258,5 +2258,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5423693237040465365, guid: 4189facaaea254938a7666251bc0bb0c,
         type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Collector
+      value: 
+      objectReference: {fileID: 8326840631488388379, guid: a4757569bdea34466963ed76c266add4,
+        type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Defender
+      value: 
+      objectReference: {fileID: 5423693237040465365, guid: 4189facaaea254938a7666251bc0bb0c,
+        type: 3}
+    - target: {fileID: 6482705089980554999, guid: edcb3ff480c86e74992978847f5cdd22,
+        type: 3}
+      propertyPath: Fighter
+      value: 
+      objectReference: {fileID: 7669673730795487768, guid: efbc0012ec87f4eef994c8fd08683fad,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edcb3ff480c86e74992978847f5cdd22, type: 3}
