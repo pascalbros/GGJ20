@@ -26,8 +26,8 @@ public class Character : MonoBehaviour {
     //Rigidbody2D bullet;
 
     Throwable damObject;
-    CharacterState state;
-    CharacterAction action;
+    public CharacterState state;
+    public CharacterAction action;
     public enum CharacterState
     {
         Swimming,
@@ -60,8 +60,6 @@ public class Character : MonoBehaviour {
             Move();
             Action();
         }
-        Debug.Log(state);
-
         
     }
 
@@ -118,7 +116,7 @@ public class Character : MonoBehaviour {
     void SpecialAction()
     {
         action = CharacterAction.ActionCoolDown;
-        StartCoroutine(waitForAction(1f, CharacterAction.WaitingForAction));
+        StartCoroutine(waitForAction(5f, CharacterAction.WaitingForAction));
         //SpecialAbilityScript
         if (gameObject.tag.Equals("Collector"))
         {
@@ -148,17 +146,17 @@ public class Character : MonoBehaviour {
     }
     IEnumerator waitForState(float time, CharacterState newState)
     {
-        Debug.Log("printone");
-        Instantiate(stunPrefab, new Vector2(transform.position.x, transform.position.y + 10), Quaternion.identity);
-        stunPrefab.transform.parent = transform;
-        Animator stunAnimator = stunPrefab.GetComponent<Animator>();
-        stunAnimator.SetBool("isStunned", true);
 
+        Animator stunAnimator = stunPrefab.GetComponent<Animator>();
+        
         yield return new WaitForSeconds(time);
+        
+        if (state == CharacterState.Stunned) {
+            stunAnimator.SetBool("isStunned", false);
+        }
         state = newState;
 
-        stunAnimator.SetBool("isStunned", false);
-  
+
 
     }
     public void ReleaseObject()
@@ -285,7 +283,7 @@ public class Character : MonoBehaviour {
         }
         else if (collision.gameObject.layer == 8)
         {
-            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team && state!= CharacterState.Stunned)
+            if (collision.GetComponent<Throwable>().throwing&& collision.GetComponent<Throwable>().teamOwner != team)
             {
 
                 stunnPlayer();
@@ -302,6 +300,15 @@ public class Character : MonoBehaviour {
     {
         CharacterState newState = state;
         state = CharacterState.Stunned;
+        stunnPrefab sp = null;
+        
+        sp = Instantiate(stunPrefab, new Vector2(transform.position.x, transform.position.y + 0.1f), Quaternion.identity).GetComponent<stunnPrefab>();
+        sp.character = this.transform;
+        Animator stunAnimator = sp.GetComponent<Animator>();
+
+        //stunPrefab.transform.parent = transform;
+        stunAnimator.SetBool("isStunned", true);
+        
         StartCoroutine(waitForState(3, newState));
 
     }

@@ -1432,9 +1432,26 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 764733427213224176, guid: 80754938d2b9a405cafb526314918e16,
         type: 3}
+      propertyPath: throwables.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 764733427213224176, guid: 80754938d2b9a405cafb526314918e16,
+        type: 3}
       propertyPath: onDamLifeUp
       value: 
       objectReference: {fileID: 8300000, guid: 141e04aae90e74bda846da11d4903719, type: 3}
+    - target: {fileID: 764733427213224176, guid: 80754938d2b9a405cafb526314918e16,
+        type: 3}
+      propertyPath: throwables.Array.data[0]
+      value: 
+      objectReference: {fileID: 287627846393361895, guid: 24cae5974cd0046cebcb69adbe5946c1,
+        type: 3}
+    - target: {fileID: 764733427213224176, guid: 80754938d2b9a405cafb526314918e16,
+        type: 3}
+      propertyPath: throwables.Array.data[1]
+      value: 
+      objectReference: {fileID: 3647070412335526538, guid: 253be093efc6a491f811d33a2ae5f56a,
+        type: 3}
     - target: {fileID: 764733427743509636, guid: 80754938d2b9a405cafb526314918e16,
         type: 3}
       propertyPath: m_Name
@@ -1801,9 +1818,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 764733427213224176, guid: 80754938d2b9a405cafb526314918e16,
         type: 3}
+      propertyPath: throwables.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 764733427213224176, guid: 80754938d2b9a405cafb526314918e16,
+        type: 3}
       propertyPath: onDamLifeUp
       value: 
       objectReference: {fileID: 8300000, guid: 141e04aae90e74bda846da11d4903719, type: 3}
+    - target: {fileID: 764733427213224176, guid: 80754938d2b9a405cafb526314918e16,
+        type: 3}
+      propertyPath: throwables.Array.data[0]
+      value: 
+      objectReference: {fileID: 287627846393361895, guid: 24cae5974cd0046cebcb69adbe5946c1,
+        type: 3}
+    - target: {fileID: 764733427213224176, guid: 80754938d2b9a405cafb526314918e16,
+        type: 3}
+      propertyPath: throwables.Array.data[1]
+      value: 
+      objectReference: {fileID: 3647070412335526538, guid: 253be093efc6a491f811d33a2ae5f56a,
+        type: 3}
     - target: {fileID: 764733427743509636, guid: 80754938d2b9a405cafb526314918e16,
         type: 3}
       propertyPath: m_Name

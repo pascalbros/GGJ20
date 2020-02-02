@@ -59,6 +59,7 @@ public class DamScoreManager : MonoBehaviour
     private void UpdateLifeText() {
         if (this.lifeText == null) { return; }
         this.lifeText.text = this.percentage;
+        this.lifeText.color = this.life < 0.15 ? Color.red : Color.white;
     }
 
     //Value from 0.0 to 1.0

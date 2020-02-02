@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DamColliderManager : MonoBehaviour
 {
+    public GameObject[] throwables;
     public AudioClip onDamLifeUp;
     public DamScoreManager scoreManager;
     // Start is called before the first frame update
@@ -26,7 +27,7 @@ public class DamColliderManager : MonoBehaviour
             if (isTeamMate) {
                 OnTeamMateEntered(character);
             } else {
-                //OnEnemyEntered(col.gameObject);
+                OnEnemyEntered(character);
             }
         }
     }
@@ -50,10 +51,11 @@ public class DamColliderManager : MonoBehaviour
         }
     }
 
-    private void OnEnemyEntered(GameObject enemy) {
-        bool hasObject = false;
+    private void OnEnemyEntered(Character enemy) {
+        bool hasObject = enemy.hasObject();
         if (hasObject) { return; }
         scoreManager.AddLife(-0.05f);
+        Instantiate(this.throwables[Random.Range(0, throwables.Length)], enemy.transform.position, Quaternion.identity);
         //player get an object
     }
 }
