@@ -14,7 +14,7 @@ public class stunnPrefab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.Lerp(transform.position, new Vector3(character.position.x, character.position.y+.5f, 0), Time.deltaTime*5);
+        transform.position = Vector2.Lerp(transform.position, new Vector3(character.position.x, character.position.y+.3f, 0), Time.deltaTime*5);
     }
     IEnumerator SelfDestroy()
     {

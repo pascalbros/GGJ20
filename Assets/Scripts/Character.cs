@@ -91,11 +91,11 @@ public class Character : MonoBehaviour {
     void Action() {
         if (action == CharacterAction.WaitingForAction)
         {
-            if (Input.GetButtonDown("XButton" + playerId)) SpecialAction();
+            if (state!=CharacterState.Stunned&&Input.GetButtonDown("XButton" + playerId)) SpecialAction();
         }
         if (action == CharacterAction.BringingObject)
         {
-            if (Input.GetButtonUp("XButton" + playerId)) ThrowObject();
+            if (state != CharacterState.Stunned && Input.GetButtonUp("XButton" + playerId)) ThrowObject();
         }
     }
 
