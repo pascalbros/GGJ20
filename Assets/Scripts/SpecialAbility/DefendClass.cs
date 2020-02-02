@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DefendClass : MonoBehaviour
 {
-    Character[] positions = new Character[2];
+    Character[] positions = new Character[3];
     Animator anim;
     // Start is called before the first frame update
     void Start()

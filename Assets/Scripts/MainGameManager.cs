@@ -70,17 +70,17 @@ public class MainGameManager : MonoBehaviour
 
     void SetupPlayers() {
         Vector3 position = new Vector3(4f, 1.83f, 0f);
-        List<TeamChoice> team1 = new List<TeamChoice>();
-        List<TeamChoice> team2 = new List<TeamChoice>();
+        List<TeamChoiceData> team1 = new List<TeamChoiceData>();
+        List<TeamChoiceData> team2 = new List<TeamChoiceData>();
 
         foreach(TeamChoice p in MainGameManager.controllers) {
             if (p.team == 0) {
-                team1.Add(p);
+                team1.Add(p.GetData());
             } else if (p.team == 2) {
-                team2.Add(p);
+                team2.Add(p.GetData());
             }
         } 
-        List<TeamChoice> teams = new List<TeamChoice>();
+        List<TeamChoiceData> teams = new List<TeamChoiceData>();
         teams.AddRange(team2);
         teams.AddRange(team1);
         teams.Add(SwappingTeamMate(2));
@@ -94,7 +94,7 @@ public class MainGameManager : MonoBehaviour
             new Vector3(-4.88f, -0.18f, position.z) //swap1
         };
         for (int i = 0; i < teams.Count; i++) {
-            TeamChoice teamItem = teams[i];
+            TeamChoiceData teamItem = teams[i];
             GameObject player=null;
             if (i <= 3) {
                 if (i%2==1) player = Instantiate(this.Fighter,positions[i], Quaternion.identity);
@@ -111,8 +111,8 @@ public class MainGameManager : MonoBehaviour
         }
     }
 
-    private TeamChoice SwappingTeamMate(int teamId) {
-        TeamChoice teamMate = new TeamChoice();
+    private TeamChoiceData SwappingTeamMate(int teamId) {
+        TeamChoiceData teamMate = new TeamChoiceData();
         teamMate.playerId = 0;
         teamMate.team = teamId;
         teamMate.confirmed = true;
