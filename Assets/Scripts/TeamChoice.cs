@@ -18,20 +18,20 @@ public class TeamChoice : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (wait > 0.0f) {
             wait -= Time.deltaTime;
             CheckButtons();
             return;
         }
-        if (Input.GetAxis("Horizontal" + playerId) != 0)
+        CheckButtons();
+        if (Input.GetAxis("Horizontal" + playerId) != 0 && !confirmed)
         {
-            wait = 0.05f;
+            wait = 0.1f;
             team = Mathf.Clamp(team + Mathf.RoundToInt(Input.GetAxis("Horizontal" + playerId)), 0, 2);
             transform.position = position[team];
         }
-        CheckButtons();
     }
 
     private void CheckButtons() {

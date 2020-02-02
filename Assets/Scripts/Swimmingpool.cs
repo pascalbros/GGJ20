@@ -25,7 +25,6 @@ public class Swimmingpool : MonoBehaviour
     {
         if(teamId == beaver.GetComponent<Character>().team)
         {
-        
 
         }
 

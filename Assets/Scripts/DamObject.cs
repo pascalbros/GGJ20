@@ -7,7 +7,7 @@ public class DamObject : MonoBehaviour
     public AudioClip onCollectedClip;
     public float speed = 1.0f;
     public float speedRange = 0.5f;
-    public float minY = -4.0f;
+    public float minY = -3.5f;
     // Start is called before the first frame update
     void Start()
     {
