@@ -101,12 +101,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
+<<<<<<< HEAD
   playerId: 1
+=======
+  playerId: 0
+  pool: {fileID: 0}
+>>>>>>> 7c8572ea19f4210abbad90daedb27f7f971536da
   speedMalus: 1.4
-  moveSpeed: 1.3
+  moveSpeed: 1.6
   stunPrefab: {fileID: 1602716570573590036, guid: f5925299ba7e6469c9a9656f4ab257fe,
     type: 3}
-  throwForce: 165
+  throwForce: 150
   state: 0
   action: 0
 --- !u!50 &7669673730795487772
