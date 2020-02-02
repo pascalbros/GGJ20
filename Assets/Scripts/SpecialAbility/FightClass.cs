@@ -24,7 +24,7 @@ public class FightClass : MonoBehaviour
     {
         foreach (Character c in positions)
         {
-            if (c != GetComponent<Character>() && Vector3.Distance(c.transform.position, transform.position) < 1) c.stunnPlayer();
+            if (Vector3.Distance(c.transform.position, transform.position) < 1) c.stunnPlayer();
         }
     }
 }
