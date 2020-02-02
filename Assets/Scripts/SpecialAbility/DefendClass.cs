@@ -6,6 +6,7 @@ public class DefendClass : MonoBehaviour
 {
     Character[] positions = new Character[2];
     Animator anim;
+    public float force=280f;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +41,7 @@ public class DefendClass : MonoBehaviour
 
             if ((c.transform.position - transform.position).magnitude < 1.4f)
             {
-                c.GetComponent<Rigidbody2D>().AddForce((c.transform.position - transform.position).normalized * 250);
+                c.GetComponent<Rigidbody2D>().AddForce((c.transform.position - transform.position).normalized * force);
             }
 
         }
