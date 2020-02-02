@@ -54,11 +54,7 @@ public class Character : MonoBehaviour {
         {
             Move();
             Action();
-        }
-
-        Debug.Log(state);
-
-        
+        }        
     }
 
     void Move()

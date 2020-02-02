@@ -90,6 +90,7 @@ public class MainGameManager : MonoBehaviour
         for (int i = 0; i < teams.Count; i++) {
             TeamChoice teamItem = teams[i];
             var player = Instantiate(this.player,positions[i], Quaternion.identity);
+            player.GetComponent<SpriteRenderer>().color = teamItem.team == 0 ? Color.red : Color.cyan;
             Character character = player.GetComponent<Character>();
             character.team = teamItem.team == 0 ? 1 : 2;
             character.playerId = teamItem.playerId;
