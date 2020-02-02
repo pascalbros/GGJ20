@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   team: 0
-  playerId: 0
+  playerId: 1
   speedMalus: 1.4
   moveSpeed: 1.3
   stunPrefab: {fileID: 1602716570573590036, guid: f5925299ba7e6469c9a9656f4ab257fe,
@@ -140,7 +140,7 @@ Animator:
   m_GameObject: {fileID: 7669673730795487768}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1bacdb415949c4e56bb41a3878affeb9, type: 2}
+  m_Controller: {fileID: 22100000, guid: baf61d52279774b6baf24b5e262acb7c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -182,7 +182,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7669673730795487768}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
