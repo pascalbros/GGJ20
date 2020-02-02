@@ -152,16 +152,18 @@ public class Character : MonoBehaviour {
     }
     IEnumerator waitForState(float time, CharacterState newState)
     {
-
+        CharacterState oldState = state;
         Animator stunAnimator = stunPrefab.GetComponent<Animator>();
         
         yield return new WaitForSeconds(time);
-        
-        if (state == CharacterState.Stunned) {
-            stunAnimator.SetBool("isStunned", false);
+        if (state == oldState)
+        {
+            if (state == CharacterState.Stunned)
+            {
+                stunAnimator.SetBool("isStunned", false);
+            }
+            state = newState;
         }
-        state = newState;
-
 
 
     }
@@ -328,6 +330,7 @@ public class Character : MonoBehaviour {
         {
             if (collision.GetComponent<Throwable>().throwing) collision.GetComponent<BoxCollider2D>().enabled = true;
             damObject = null;
+            action = CharacterAction.WaitingForAction;
         }
     }
 
@@ -350,7 +353,7 @@ public class Character : MonoBehaviour {
         nextBeaver.GetComponent<Character>().switchChar = false;
 
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-        nextBeaver.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        nextBeaver.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         nextBeaver.GetComponent<Character>().playerId = playerId;
         nextBeaver.GetComponent<Character>().action = CharacterAction.WaitingForAction;
         this.playerId = 0;
