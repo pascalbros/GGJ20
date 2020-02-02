@@ -297,7 +297,7 @@ public class Character : MonoBehaviour {
                 stunnPlayer();
                 
             }
-            else if (!collision.GetComponent<Throwable>().stealing)
+            else if (!collision.GetComponent<Throwable>().stealing&&action!=CharacterAction.BringingObject)
             {
                 damObject = collision.GetComponent<Throwable>();
                 GrabObject();
@@ -326,9 +326,9 @@ public class Character : MonoBehaviour {
         {
             state = CharacterState.Walking;
         }
-        else if (collision.gameObject.layer == 8 && action!=CharacterAction.BringingObject)
+        else if (collision.gameObject.layer == 8&& collision.GetComponent<Throwable>().throwing)
         {
-            if (collision.GetComponent<Throwable>().throwing) collision.GetComponent<BoxCollider2D>().enabled = true;
+            collision.GetComponent<BoxCollider2D>().enabled = true;
             damObject = null;
             action = CharacterAction.WaitingForAction;
         }
