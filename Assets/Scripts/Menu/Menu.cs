@@ -14,8 +14,8 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        iTween.MoveTo(beaver1, iTween.Hash("x", -6.29, "time", 2.2, "easetype", iTween.EaseType.linear, "oncomplete", "OnGong", "oncompletetarget" , this.gameObject));
-        iTween.MoveTo(beaver2, iTween.Hash("x", 6.29, "time", 2.2, "easetype", iTween.EaseType.linear));
+        iTween.MoveTo(beaver1, iTween.Hash("x", -5.9, "time", 2.2, "easetype", iTween.EaseType.linear, "oncomplete", "OnGong", "oncompletetarget" , this.gameObject));
+        iTween.MoveTo(beaver2, iTween.Hash("x", 5.9, "time", 2.2, "easetype", iTween.EaseType.linear));
     }
 
     public void OnGong() {
