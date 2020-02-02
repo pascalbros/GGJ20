@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 09d79806ada7448a189e3b2aba09812a
+guid: 0def3606dab435a42915ec34df9d4b0c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8800339947041148590
-    second: CHIATTO_Anim_Spritesheet_Idle_Water_0
+      213: 2424292322912621795
+    second: CHIATTO_SpriteSheet_FINAL_0
   - first:
-      213: 5958790873703971302
-    second: CHIATTO_Anim_Spritesheet_Idle_Water_1
+      213: -1737198530982815183
+    second: CHIATTO_SpriteSheet_FINAL_1
   - first:
-      213: 1327656580202774521
-    second: CHIATTO_Anim_Spritesheet_Idle_Water_2
+      213: 7710551415471792808
+    second: CHIATTO_SpriteSheet_FINAL_2
+  - first:
+      213: -503334322852943428
+    second: CHIATTO_SpriteSheet_FINAL_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CHIATTO_Anim_Spritesheet_Idle_Water_0
+      name: CHIATTO_SpriteSheet_FINAL_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 11
+        x: 11
+        y: 5
         width: 38
-        height: 37
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -109,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eae411e3e86112a70800000000000000
-      internalID: 8800339947041148590
+      spriteID: 3e4d9e2f501d4a120800000000000000
+      internalID: 2424292322912621795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHIATTO_Anim_Spritesheet_Idle_Water_1
+      name: CHIATTO_SpriteSheet_FINAL_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 11
-        width: 38
-        height: 37
+        x: 72
+        y: 4
+        width: 41
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e9f6f58ab0e1b250800000000000000
-      internalID: 5958790873703971302
+      spriteID: 13a5070e32b34e7e0800000000000000
+      internalID: -1737198530982815183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHIATTO_Anim_Spritesheet_Idle_Water_2
+      name: CHIATTO_SpriteSheet_FINAL_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 11
-        width: 38
-        height: 36
+        x: 130
+        y: 5
+        width: 51
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +154,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ff32be10a8cc6210800000000000000
-      internalID: 1327656580202774521
+      spriteID: 8a2e49df8a1610b60800000000000000
+      internalID: 7710551415471792808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHIATTO_SpriteSheet_FINAL_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 5
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9a613a91cc309f0800000000000000
+      internalID: -503334322852943428
       vertices: []
       indices: 
       edges: []
