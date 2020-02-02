@@ -104,11 +104,11 @@ MonoBehaviour:
   team: 0
   playerId: 0
   pool: {fileID: 0}
-  speedMalus: 1.2
-  moveSpeed: 1.7
+  speedMalus: 1.5
+  moveSpeed: 1.9
   stunPrefab: {fileID: 1602716570573590036, guid: f5925299ba7e6469c9a9656f4ab257fe,
     type: 3}
-  throwForce: 165
+  throwForce: 150
   state: 0
   action: 0
   punch: {fileID: 8300000, guid: 89d1bbf2db79d46b59e43bd48c150398, type: 3}
