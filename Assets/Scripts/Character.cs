@@ -8,7 +8,9 @@ public class Character : MonoBehaviour {
     public int team=1;
     public int playerId = 1;
     bool objectHolded;
-	[SerializeField]
+    bool switchChar = true;
+    public float speedMalus = 1.4f;
+    [SerializeField]
 	float moveSpeed = 2f;
 
     [SerializeField]
@@ -55,7 +57,7 @@ public class Character : MonoBehaviour {
             Move();
             Action();
         }
-
+        
         Debug.Log(state);
 
         
@@ -101,6 +103,7 @@ public class Character : MonoBehaviour {
 	{
         if (damObject != null && damObject.canBeGrabbed()&&objectHolded==false)
         {
+            moveSpeed /= speedMalus;
             damObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             damObject.transform.parent = this.gameObject.transform;
             action = CharacterAction.BringingObject;
@@ -156,6 +159,7 @@ public class Character : MonoBehaviour {
             damObject = null;
             action = CharacterAction.WaitingForAction;
             objectHolded = false;
+            moveSpeed *= speedMalus;
         }
     }
 
@@ -168,6 +172,7 @@ public class Character : MonoBehaviour {
             damObject = null;
             action = CharacterAction.WaitingForAction;
             objectHolded = false;
+            moveSpeed *= speedMalus;
         }
     }
 
@@ -186,6 +191,7 @@ public class Character : MonoBehaviour {
             damObject = null;
             action = CharacterAction.WaitingForAction;
             objectHolded = false;
+            moveSpeed *= speedMalus;
         }
         else
             damObject = null;
@@ -304,21 +310,26 @@ public class Character : MonoBehaviour {
     {
         if(collision.gameObject.GetComponent<Character>() != null)
         {
-            if(collision.gameObject.GetComponent<Character>().playerId == 0 && collision.gameObject.GetComponent<Character>().team == this.team)
+            if(switchChar && collision.gameObject.GetComponent<Character>().playerId == 0 && collision.gameObject.GetComponent<Character>().team == team)
             {
                // Debug.Log();
-                ChangeChar(collision.gameObject);
+                StartCoroutine(ChangeChar(collision.gameObject));
             }
            
         }
     }
 
-    public void ChangeChar(GameObject nextBeaver)
+    IEnumerator ChangeChar(GameObject nextBeaver)
     {
+        switchChar = false;
+        nextBeaver.GetComponent<Character>().switchChar = false;
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         nextBeaver.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         nextBeaver.GetComponent<Character>().playerId = playerId;
         this.playerId = 0;
-      
+        yield return new WaitForSeconds(1);
+        switchChar = true;
+        nextBeaver.GetComponent<Character>().switchChar = true;
+
     }
 }
