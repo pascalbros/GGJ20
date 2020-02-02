@@ -291,7 +291,7 @@ public class Character : MonoBehaviour {
     {
         CharacterState newState = state;
         state = CharacterState.Stunned;
-        StartCoroutine(waitForState(1, newState));
+        StartCoroutine(waitForState(3, newState));
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

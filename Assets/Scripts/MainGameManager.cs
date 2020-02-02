@@ -12,7 +12,7 @@ public enum GameState {
 public class MainGameManager : MonoBehaviour
 {
     public GameObject player;
-    public static TeamChoice[] controllers = new TeamChoice[4];
+    public static TeamChoice[] controllers = new TeamChoice[42];
     public DamManager dam1;
     public DamManager dam2;
     public GameState status = GameState.NOT_STARTED;
